@@ -1,5 +1,5 @@
-import { createHome } from "./home";
+import { loadHome } from "./home";
 
 const content = document.querySelector('#content');
 
-content.appendChild(createHome());
+content.appendChild(loadHome());
