@@ -1,5 +1,8 @@
 import { loadHome } from "./home";
 
-const content = document.querySelector('#content');
+(function app() {
+    const content = document.querySelector('#content');
+    content.appendChild(loadHome());
+})();
 
-content.appendChild(loadHome());
+

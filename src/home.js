@@ -22,11 +22,11 @@ function createSecondSection() {
     return section;
 }
 
-function createThirdSection() {
+function createMenuSection() {
     const section = document.createElement("div")
     const headerText = document.createElement("h1")
     const menuList = document.createElement("ul")
-    const menus = ['Ayam Bakar','Nasi Goreng','Gado-gado'];
+    const menus = ['Ayam Bakar','Nasi Goreng','Gado-gado','Soto Makassar'];
 
     headerText.textContent = "Peak at our menu!"
     menus.forEach((menu) => {
@@ -40,14 +40,30 @@ function createThirdSection() {
     return section;
 }
 
+function createBookingSection() {
+    const section = document.createElement("div")
+    const headerText = document.createElement("h1")
+    const paraText = document.createElement("p")
+    const bookButton = document.createElement("button")
+
+    headerText.textContent = "Don't Wait - Book Now!"
+    paraText.textContent = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+    bookButton.textContent = "Book a Table"
+
+    section.append(headerText, paraText, bookButton);
+
+    return section;
+}
+
 function loadHome() {
     const content = document.createElement("div");
 
     const heroSection = createHeroSection();
     const secondSection = createSecondSection();
-    const thirdSection = createThirdSection();
+    const thirdSection = createMenuSection();
+    const fourthSection = createBookingSection();
 
-    content.append(heroSection, secondSection, thirdSection);
+    content.append(heroSection, secondSection, thirdSection, fourthSection);
 
     return content;
 }
