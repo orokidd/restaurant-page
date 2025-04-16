@@ -22,13 +22,32 @@ function createSecondSection() {
     return section;
 }
 
+function createThirdSection() {
+    const section = document.createElement("div")
+    const headerText = document.createElement("h1")
+    const menuList = document.createElement("ul")
+    const menus = ['Ayam Bakar','Nasi Goreng','Gado-gado'];
+
+    headerText.textContent = "Peak at our menu!"
+    menus.forEach((menu) => {
+        const list = document.createElement('li');
+        list.textContent = menu;
+        menuList.appendChild(list);
+    })
+
+    section.append(headerText, menuList);
+
+    return section;
+}
+
 function loadHome() {
     const content = document.createElement("div");
 
     const heroSection = createHeroSection();
     const secondSection = createSecondSection();
+    const thirdSection = createThirdSection();
 
-    content.append(heroSection, secondSection);
+    content.append(heroSection, secondSection, thirdSection);
 
     return content;
 }
