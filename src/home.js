@@ -6,7 +6,7 @@ function createHeroSection() {
 
     hero.className = "hero";
     heroText.className = "hero-text"
-    heroText.textContent = "Orokidd arasaka restaurant"
+    heroText.textContent = "Orokidd Arasaka Unicusine"
 
     hero.appendChild(heroText);
 
@@ -20,22 +20,25 @@ function createSecondSection() {
     const img = document.createElement("img");
     const headerText = document.createElement("h1")
     const paraText = document.createElement("p")
+    const button = document.createElement("button")
 
     img.src = myImage;
     img.alt = 'Image of food';
-    img.className = "img-food"
+
     section.className = "second";
+    img.className = "img-food" 
     textContent.className = "text-content";
     imageContent.className = "image-content";
     headerText.className = "header";
     paraText.className = "text";
+    button.className = "second-button"
 
-
+    button.textContent = "Learn More"
     headerText.textContent = "A healthier way now has a seat at the table"
     paraText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et mauris ligula. Vestibulum sed mi in odio tempus mollis ut vitae est."
 
     imageContent.append(img)
-    textContent.append(headerText, paraText)
+    textContent.append(headerText, paraText, button)
     section.append(textContent, imageContent);
 
     return section;

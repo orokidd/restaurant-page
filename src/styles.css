@@ -1,37 +1,29 @@
-/* 1. Use a more-intuitive box-sizing model */
+/* CSS Reset */
 *, *::before, *::after {
     box-sizing: border-box;
   }
-  
-  /* 2. Remove default margin */
   * {
     margin: 0;
   }
   
   body {
-    /* 3. Add accessible line-height */
     line-height: 1.5;
-    /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
   }
   
-  /* 5. Improve media defaults */
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
   }
   
-  /* 6. Inherit fonts for form controls */
   input, button, textarea, select {
     font: inherit;
   }
   
-  /* 7. Avoid text overflows */
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
   
-  /* 8. Improve line wrapping */
   p {
     text-wrap: pretty;
   }
@@ -46,8 +38,9 @@
     color: black;
   }
 
+/* Own CSS */
 body {
-    background-color:rgb(255, 241, 219)
+    background-color:rgb(255, 247, 235)
 }
 
 nav {
@@ -76,6 +69,7 @@ nav {
 }
     .hero h1 {
         color: white;
+        font-size: 48px;
     }
 
 .second {
@@ -90,6 +84,19 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        font-size: 24px;
+    }
+    .second-button {
+        font-size: 18px;
+        max-width: 130px;
+        min-height: 48px;
+        margin-top: 24px;
+        border: none;
+        border-radius: 40px;
+
+        background-color: rgb(62, 84, 62);
+        color: rgb(255, 255, 255);
     }
     .image-content {
         flex:1;
