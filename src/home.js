@@ -1,4 +1,8 @@
 import myImage from './images/food1.png';
+import imgFood1 from './images/food1.jpg';
+import imgFood2 from './images/food2.jpg';
+import imgFood3 from './images/food3.jpg';
+import imgFood4 from './images/food4.jpg';
 
 function createHeroSection() {
     const hero = document.createElement("div")
@@ -49,16 +53,22 @@ function createMenuSection() {
     const headerText = document.createElement("h1")
     const menuList = document.createElement("ul")
     const menus = ['Ayam Bakar','Nasi Goreng','Gado-gado','Soto Makassar'];
+    const imgFoods = [imgFood1, imgFood2, imgFood3, imgFood4];
 
     section.className = "menu";
     headerText.className = "header";
     menuList.className = "menu-list";
 
     headerText.textContent = "Peak at our menu!"
-    menus.forEach((menu) => {
+    menus.forEach((food, index) => {
         const list = document.createElement('li');
-        list.textContent = menu;
-        menuList.appendChild(list);
+        const img = document.createElement('img');
+        const text = document.createElement('p')
+
+        img.src = imgFoods[index];;
+        text.textContent = food;
+        list.append(img, text);
+        menuList.append(list);
     })
 
     section.append(headerText, menuList);
