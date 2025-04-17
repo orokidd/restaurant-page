@@ -59,7 +59,7 @@ function createMenuSection() {
     headerText.className = "header";
     menuList.className = "menu-list";
 
-    headerText.textContent = "Peak at our menu!"
+    headerText.textContent = "Have a peak at our menu!"
     menus.forEach((food, index) => {
         const list = document.createElement('li');
         const img = document.createElement('img');
