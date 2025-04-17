@@ -1,3 +1,5 @@
+import myImage from './images/png1.png';
+
 function createHeroSection() {
     const hero = document.createElement("div")
     const heroText = document.createElement("h1")
@@ -15,9 +17,13 @@ function createSecondSection() {
     const section = document.createElement("div")
     const textContent = document.createElement("div")
     const imageContent = document.createElement("div")
+    const img = document.createElement("img");
     const headerText = document.createElement("h1")
     const paraText = document.createElement("p")
 
+    img.src = myImage;
+    img.alt = 'Image of food';
+    img.className = "img-food"
     section.className = "second";
     textContent.className = "text-content";
     imageContent.className = "image-content";
@@ -28,6 +34,7 @@ function createSecondSection() {
     headerText.textContent = "A healthier way now has a seat at the table"
     paraText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et mauris ligula. Vestibulum sed mi in odio tempus mollis ut vitae est."
 
+    imageContent.append(img)
     textContent.append(headerText, paraText)
     section.append(textContent, imageContent);
 

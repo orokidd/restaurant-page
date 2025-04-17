@@ -46,7 +46,45 @@
     color: black;
   }
 
+body {
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+    max-width: 800px;
+    margin: 20px auto;
+}
+    nav button:hover {
+        cursor: pointer;
+    }
+
 .hero {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    background-image: url(./images/5.jpg);
+    background-size: cover; /* Scales image to fit */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 600px;
+    max-width: 1800px;
+    margin: 0 auto;
 }
+    .hero h1 {
+        color: white;
+    }
+
+.second {
+    display: flex;
+
+}
+    .text-content{
+        flex: 1;
+    }
+    .image-content {
+        flex:1;
+    }
