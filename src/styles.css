@@ -168,3 +168,19 @@ nav {
         background-color: rgb(62, 84, 62);
         color: rgb(255, 255, 255);
     }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1800px;
+    margin: 16px auto;
+    color: rgb(62, 84, 62)
+}
+    .socials {
+        display: flex;
+        gap: 20px;
+    }
+    .socials > a {
+        color: rgb(62, 84, 62)
+    }

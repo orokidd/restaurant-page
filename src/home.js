@@ -96,6 +96,31 @@ function createBookingSection() {
     return section;
 }
 
+function createFooter() {
+    const section = document.createElement("div")
+    const rights = document.createElement('div')
+    const socials = document.createElement('div')
+    const text = document.createElement('p')
+    const socialsInsta = document.createElement('a')
+    const socialsFb = document.createElement('a')
+    const socialsTwt = document.createElement('a')
+
+    text.innerHTML = "&copy;2025 Culinique. All rights reserved."
+    socialsInsta.textContent = "Instagram"
+    socialsFb.textContent = "Facebook"
+    socialsTwt.textContent = "Twitter"
+
+    section.className = "footer";
+    rights.className = "copyright";
+    socials.className = "socials";
+
+    rights.append(text)
+    socials.append(socialsInsta, socialsFb, socialsTwt)
+    section.append(rights, socials)
+
+    return section
+}
+
 function loadHome() {
     const content = document.createElement("div");
 
@@ -103,8 +128,9 @@ function loadHome() {
     const secondSection = createSecondSection();
     const thirdSection = createMenuSection();
     const fourthSection = createBookingSection();
+    const footerSection = createFooter();
 
-    content.append(heroSection, secondSection, thirdSection, fourthSection);
+    content.append(heroSection, secondSection, thirdSection, fourthSection, footerSection);
 
     return content;
 }
