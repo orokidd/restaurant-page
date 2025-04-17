@@ -30,8 +30,9 @@
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
   }
-  ul, li {
+  ul, li, ol {
     list-style: none;
+    padding-left: 0;
   }
   a {
     text-decoration: none;
@@ -101,3 +102,25 @@ nav {
     .image-content {
         flex:1;
     }
+
+.menu .header {
+    text-align: center;
+}    
+.menu .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.menu-list > li {
+    flex: 1;
+
+    min-width: 240px;
+}
+
+.menu-list > li > img {
+    object-fit: cover;
+    height: 300px;
+}
