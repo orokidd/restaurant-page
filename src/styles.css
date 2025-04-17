@@ -47,7 +47,7 @@
   }
 
 body {
-    
+    background-color:rgb(255, 241, 219)
 }
 
 nav {
@@ -81,9 +81,15 @@ nav {
 .second {
     display: flex;
 
+    max-width: 1800px;
+    margin: 0 auto;
+
 }
     .text-content{
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .image-content {
         flex:1;

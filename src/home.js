@@ -1,4 +1,4 @@
-import myImage from './images/png1.png';
+import myImage from './images/food1.png';
 
 function createHeroSection() {
     const hero = document.createElement("div")
