@@ -109,6 +109,7 @@ nav {
 }
     .menu .header {
         text-align: center;
+        font-size: 48px;
     }    
     .menu ul {
         display: flex;
@@ -139,7 +140,7 @@ nav {
 .booking {
     max-width: 1800px;
     margin: 0 auto;
-    margin-top: 220px;
+    margin-top: 280px;
     padding-bottom: 280px;
 }
     .booking .header {
