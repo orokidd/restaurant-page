@@ -46,4 +46,35 @@ function createMenus() {
     return menus;
 }
 
+function createMenuSection() {
+    const menuContainer = document.createElement("div")
+    const menus = createMenus()
+
+    menuContainer.className = "menu-container"
+
+    menus.forEach(menu => {
+        const menuTypeContainer = document.createElement("div")
+        const menuTypeText = document.createElement("h1")
+
+        menuTypeText.textContent = menu.menuType;
+
+        menuTypeContainer.append(menuTypeText);
+        menuContainer.append(menuTypeContainer);
+    })
+
+    return menuContainer;
+}
+
+function loadMenu() {
+    const content = document.querySelector('#content');
+    content.innerHTML= ""
+
+    const headingSection = createHeadingSection();
+    const menuSection = createMenuSection();
+
+    content.append(headingSection, menuSection);
+
+    // return content;
+}
+
 export { loadMenu }
