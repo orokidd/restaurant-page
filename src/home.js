@@ -122,7 +122,8 @@ function createFooter() {
 }
 
 function loadHome() {
-    const content = document.createElement("div");
+    const content = document.querySelector('#content');
+    content.innerHTML= ""
 
     const heroSection = createHeroSection();
     const secondSection = createSecondSection();
@@ -132,7 +133,7 @@ function loadHome() {
 
     content.append(heroSection, secondSection, thirdSection, fourthSection, footerSection);
 
-    return content;
+    // return content;
 }
 
 export { loadHome }
