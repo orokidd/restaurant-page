@@ -56,11 +56,19 @@ nav {
     }
 
 .hero {
+    background-image: url(./images/5.jpg);
+}
+
+.heading {
+    background-image: url(./images/2.jpg);
+}
+
+
+.hero, .heading {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-image: url(./images/5.jpg);
     background-size: cover; /* Scales image to fit */
     background-repeat: no-repeat;
     background-position: center;
@@ -69,6 +77,10 @@ nav {
     margin: 0 auto;
 }
     .hero h1 {
+        color: white;
+        font-size: 98px;
+    }
+    .heading h1 {
         color: white;
         font-size: 48px;
     }
@@ -184,4 +196,19 @@ nav {
     }
     .socials > a {
         color: rgb(62, 84, 62)
+    }
+
+.menu-container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+    .menu-type-container {
+        padding: 40px 0;
+    }
+    .foods-container {
+        display: flex;
+        gap: 20px;
+    }
+    .food {
+        flex: 1;
     }

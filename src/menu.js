@@ -10,7 +10,7 @@ function createHeadingSection() {
 
     headingText.textContent = "Our Menu"
     headingPara.textContent = "Discover our carefully crafted dishes, made with the finest ingredients and prepared with passion by our expert chefs."
-    headingContainer.append(headingText, headingPara)
+    headingContainer.append(headingText)
 
     return headingContainer;
 }
@@ -55,10 +55,12 @@ function createMenuSection() {
     menus.forEach(menu => {
         const menuTypeContainer = document.createElement("div")
         const menuTypeText = document.createElement("h1")
+        const foodsContainer = document.createElement("div")
 
-        menuTypeContainer.className = "menu-type"
+        menuTypeContainer.className = "menu-type-container"
+        foodsContainer.className = "foods-container"
         menuTypeText.textContent = menu.menuType;
-        menuTypeContainer.append(menuTypeText)
+        menuTypeContainer.append(menuTypeText, foodsContainer)
 
         menu.foods.forEach(food => {
             const foodContainer = document.createElement("div")
@@ -72,7 +74,7 @@ function createMenuSection() {
             foodPrice.textContent = food.price;
 
             foodContainer.append(foodName, foodDescription, foodPrice)
-            menuTypeContainer.append(foodContainer);
+            foodsContainer.append(foodContainer);
         })
 
         menuContainer.append(menuTypeContainer);
