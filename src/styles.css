@@ -205,10 +205,22 @@ nav {
     .menu-type-container {
         padding: 40px 0;
     }
+    .menu-type-container > h1 {
+        font-size: 68px;
+        border-bottom: solid 4px rgb(62, 84, 62);
+        /* border-radius: 8px; */
+    }
     .foods-container {
         display: flex;
         gap: 20px;
+        margin-top: 40px;
     }
     .food {
         flex: 1;
+    }
+    .food-price {
+        margin-top: 20px;
+    }
+    .food-desc{
+        font-size: 18px;
     }

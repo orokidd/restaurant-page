@@ -66,7 +66,10 @@ function createMenuSection() {
             const foodContainer = document.createElement("div")
             const foodName = document.createElement("h2")
             const foodDescription = document.createElement("p")
-            const foodPrice = document.createElement("p")
+            const foodPrice = document.createElement("h3")
+
+            foodDescription.className = "food-desc"
+            foodPrice.className = "food-price"
 
             foodContainer.className = "food"
             foodName.textContent = food.foodName;
