@@ -56,10 +56,27 @@ function createMenuSection() {
         const menuTypeContainer = document.createElement("div")
         const menuTypeText = document.createElement("h1")
 
+        menuTypeContainer.className = "menu-type"
         menuTypeText.textContent = menu.menuType;
+        menuTypeContainer.append(menuTypeText)
 
-        menuTypeContainer.append(menuTypeText);
+        menu.foods.forEach(food => {
+            const foodContainer = document.createElement("div")
+            const foodName = document.createElement("h2")
+            const foodDescription = document.createElement("p")
+            const foodPrice = document.createElement("p")
+
+            foodContainer.className = "food"
+            foodName.textContent = food.foodName;
+            foodDescription.textContent = food.description;
+            foodPrice.textContent = food.price;
+
+            foodContainer.append(foodName, foodDescription, foodPrice)
+            menuTypeContainer.append(foodContainer);
+        })
+
         menuContainer.append(menuTypeContainer);
+
     })
 
     return menuContainer;
