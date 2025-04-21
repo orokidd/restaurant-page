@@ -221,7 +221,7 @@ nav {
         color: rgb(62, 84, 62)
     }
 
-.menu-container {
+.menu-container, .about-container {
     max-width: 1800px;
     margin: 0 auto;
 }
