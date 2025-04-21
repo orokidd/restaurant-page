@@ -2,7 +2,7 @@ function createHeadingSection() {
     const headingContainer = document.createElement("div")
     const headingText = document.createElement("h1")
 
-    headingContainer.className = "heading";
+    headingContainer.className = "heading about";
     headingText.className = "heading-text";
 
 
@@ -16,10 +16,12 @@ function createAboutContent() {
     const content = [
         {
             section: 'Our Story',
+            class: 'story',
             text: 'Founded in 2018, Savory Roots began with a simple mission: bring people together through comforting, soulful food. What started as a family kitchen project turned into a full-fledged restaurant driven by passion, tradition, and a love for shared meals. Today, we’re proud to serve our community with dishes inspired by generations of home cooking and global flavors.'
         },
         {
             section: 'Meet the Team',
+            class: 'members',
             text: 'Get to know the people behind the food.',
             members: [
                 {name: 'Marco Rivera', role: 'Executive Chef'},
@@ -40,50 +42,48 @@ function createAboutSection() {
     aboutContainer.className = "about-container"
 
     aboutContent.forEach(about => {
-        const menuTypeContainer = document.createElement("div")
-        const menuTypeText = document.createElement("h1")
-        const foodsContainer = document.createElement("div")
+        const sectionContainer = document.createElement('div')
+        const sectionHeading = document.createElement('h1')
+        const sectionText = document.createElement('p')
 
-        menuTypeContainer.className = "menu-type-container"
-        foodsContainer.className = "foods-container"
-        menuTypeText.textContent = menu.menuType;
-        menuTypeContainer.append(menuTypeText, foodsContainer)
+        sectionContainer.classList.add('about-section',`${about.class}`);
+        
+        sectionHeading.textContent = about.section
+        sectionText.textContent = about.text
 
-        menu.foods.forEach(food => {
-            const foodContainer = document.createElement("div")
-            const foodName = document.createElement("h2")
-            const foodDescription = document.createElement("p")
-            const foodPrice = document.createElement("h3")
+        sectionContainer.append(sectionHeading, sectionText)
 
-            foodDescription.className = "food-desc"
-            foodPrice.className = "food-price"
+        if (about.members) {
+            about.members.forEach(member => {
+                const memberContainer = document.createElement('div')
+                const memberName = document.createElement('h2')
+                const memberRole = document.createElement('p')
+    
+                memberContainer.className = 'member'
+                memberName.textContent = member.name
+                memberRole.textContent = member.role
+    
+                memberContainer.append(memberName, memberRole)
+                sectionContainer.append(memberContainer)
+            })
+        }
 
-            foodContainer.className = "food"
-            foodName.textContent = food.foodName;
-            foodDescription.textContent = food.description;
-            foodPrice.textContent = food.price;
-
-            foodContainer.append(foodName, foodDescription, foodPrice)
-            foodsContainer.append(foodContainer);
-        })
-
-        menuContainer.append(menuTypeContainer);
-
+        aboutContainer.append(sectionContainer)
     })
 
-    return menuContainer;
+    return aboutContainer;
 }
 
-function loadMenu() {
+function loadAbout() {
     const content = document.querySelector('#content');
     content.innerHTML= ""
 
     const headingSection = createHeadingSection();
-    const menuSection = createMenuSection();
+    const aboutSection = createAboutSection();
 
-    content.append(headingSection, menuSection);
+    content.append(headingSection, aboutSection);
 
     // return content;
 }
 
-export { loadMenu }
+export { loadAbout }

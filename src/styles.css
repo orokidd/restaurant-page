@@ -63,6 +63,10 @@ nav {
     background-image: url(./images/2.jpg);
 }
 
+.about.heading {
+    background-image: url(./images/1.jpg);
+}
+
 
 .hero, .heading {
     display: flex;
