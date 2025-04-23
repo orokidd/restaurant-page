@@ -1,3 +1,8 @@
+import imgCrew1 from './images/crew2.jpg';
+import imgCrew2 from './images/crew6.jpg';
+import imgCrew3 from './images/crew3.jpg';
+import imgCrew4 from './images/crew5.jpg';
+
 function createHeadingSection() {
     const headingContainer = document.createElement("div")
     const headingText = document.createElement("h1")
@@ -24,10 +29,10 @@ function createAboutContent() {
             class: 'members',
             text: 'Get to know the people behind the food.',
             members: [
-                {name: 'Marco Rivera', role: 'Executive Chef'},
-                {name: 'Sofia Lin', role: 'Co-Founder & General Manager'},
-                {name: 'Eli Thompson', role: 'Head Barista & Beverage'},
-                {name: 'Tina Gomez', role: 'Pastry Chef'}
+                {name: 'Marco Rivera', role: 'Executive Chef', photo: imgCrew1},
+                {name: 'Sofia Azzahra', role: 'Co-Founder & General Manager', photo: imgCrew2},
+                {name: 'Eli Thompson', role: 'Head Barista & Beverage', photo: imgCrew3},
+                {name: 'Tina Gomez', role: 'Pastry Chef', photo: imgCrew4}
             ]
         }
     ]
@@ -41,7 +46,7 @@ function createAboutSection() {
 
     aboutContainer.className = "about-container"
 
-    aboutContent.forEach(about => {
+    aboutContent.forEach((about, index) => {
         const sectionContainer = document.createElement('div')
         const sectionHeading = document.createElement('h1')
         const sectionText = document.createElement('p')
@@ -59,14 +64,18 @@ function createAboutSection() {
 
             about.members.forEach(member => {
                 const memberContainer = document.createElement('div')
+                const memberImage = document.createElement('img')
                 const memberName = document.createElement('h2')
                 const memberRole = document.createElement('p')
     
+                memberImage.className = 'crew-image'
                 memberContainer.className = 'member'
+
+                memberImage.src = member.photo
                 memberName.textContent = member.name
                 memberRole.textContent = member.role
     
-                memberContainer.append(memberName, memberRole)
+                memberContainer.append(memberImage, memberName, memberRole)
                 allMemberContainer.append(memberContainer)
             })
 
