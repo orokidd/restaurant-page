@@ -279,3 +279,8 @@ nav {
     font-size: 22px;
     text-align: center;
 }
+
+.members-container {
+    display: flex;
+    justify-content: space-between;
+}
