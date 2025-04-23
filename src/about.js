@@ -54,6 +54,9 @@ function createAboutSection() {
         sectionContainer.append(sectionHeading, sectionText)
 
         if (about.members) {
+            const allMemberContainer = document.createElement('div')
+            allMemberContainer.className = "members-container"
+
             about.members.forEach(member => {
                 const memberContainer = document.createElement('div')
                 const memberName = document.createElement('h2')
@@ -64,8 +67,10 @@ function createAboutSection() {
                 memberRole.textContent = member.role
     
                 memberContainer.append(memberName, memberRole)
-                sectionContainer.append(memberContainer)
+                allMemberContainer.append(memberContainer)
             })
+
+            sectionContainer.append(allMemberContainer)
         }
 
         aboutContainer.append(sectionContainer)

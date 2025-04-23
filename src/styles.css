@@ -259,3 +259,23 @@ nav {
     .food-desc{
         font-size: 18px;
     }
+
+.about-section.story h1{
+    text-align: center;
+    font-size: 48px;
+}
+.about-section.story p{
+    text-align: center;
+    font-size: 22px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-section.members > h1 {
+    text-align: center;
+    font-size: 48px;
+}
+.about-section.members > p {
+    font-size: 22px;
+    text-align: center;
+}
