@@ -35,6 +35,19 @@ function createAboutContent() {
                 {name: 'Eli Thompson', role: 'Head Barista & Beverage', photo: imgCrew3},
                 {name: 'Tina Gomez', role: 'Pastry Chef', photo: imgCrew4}
             ]
+        },
+        {
+            section: 'Commitment to Our Community',
+            class: 'commitment',
+            text: `At Culinique, sustainability and community are givens that are inextricably intertwined. “They are an integral part of what we do in our daily lives,” says Chef Marco.
+                    <br><br>
+                    Culinique all-electric kitchen that avoids using fossil fuels will eventually draw on power generated from renewable energy like solar panels on the roof. For dishes that require grilling, the restaurant uses wood and its own charcoal.
+                    <br><br>
+                    Chef Marco is also very aware of the importance of supporting locals and embracing the local community at large. The new Culinique introduces and uses artisanal products throughout the guest experience from the lounge chairs to the tiles used to the artwork decorating its walls, Culinique highlights community crafted products in the same way that it has spotlighted Thai ingredients.
+                    “Where we grow, they will grow, that is the best way I can help them.”
+                    <br><br>
+                    Whether it is supporting fishermen who fish sustainably or giving a boost to a young cacao farmer by guiding him crafting his produce, the restaurant’s experience helps artisans produce more and better products, doing what the restaurant can to take care of the whole community. And that includes supporting staff who want to spread their wings.
+                    “I want the whole community to benefit from it, not just us.”`
         }
     ]
 
@@ -55,11 +68,11 @@ function createAboutSection() {
         sectionContainer.classList.add('about-section',`${about.class}`);
         
         sectionHeading.textContent = about.section
-        sectionText.textContent = about.text
+        sectionText.innerHTML = about.text
 
         sectionContainer.append(sectionHeading, sectionText)
 
-        if (about.members) {
+        if (about.members) { // for the member section with images
             const allMemberContainer = document.createElement('div')
             allMemberContainer.className = "members-container"
 
@@ -89,32 +102,6 @@ function createAboutSection() {
     return aboutContainer;
 }
 
-function createCommitmentSection() {
-    const aboutContainer = document.querySelector(".about-container");
-    const commitmentContainer = document.createElement("div")
-    const sectionHeading = document.createElement('h1')
-    const sectionText = document.createElement('p')
-
-    commitmentContainer.className = "about-section commitment";
-        
-    sectionHeading.textContent = "Commitment to Our Community"
-    sectionText.innerHTML = `
-                            At Culinique, sustainability and community are givens that are inextricably intertwined.
-                            “They are an integral part of what we do in our daily lives,” says Chef Marco.
-                            <br><br>
-                            Culinique all-electric kitchen that avoids using fossil fuels will eventually draw on power generated from renewable energy like solar panels on the roof. For dishes that require grilling, the restaurant uses wood and its own charcoal.
-                            <br><br>
-                            Chef Marco is also very aware of the importance of supporting locals and embracing the local community at large. The new Culinique introduces and uses artisanal products throughout the guest experience from the lounge chairs to the tiles used to the artwork decorating its walls, Culinique highlights community crafted products in the same way that it has spotlighted Thai ingredients.
-                            “Where we grow, they will grow, that is the best way I can help them.”
-                            <br><br>
-                            Whether it is supporting fishermen who fish sustainably or giving a boost to a young cacao farmer by guiding him crafting his produce, the restaurant’s experience helps artisans produce more and better products, doing what the restaurant can to take care of the whole community. And that includes supporting staff who want to spread their wings.
-                            “I want the whole community to benefit from it, not just us.”
-                            `
-
-    commitmentContainer.append(sectionHeading, sectionText)
-    aboutContainer.append(commitmentContainer);
-}
-
 function loadAbout() {
     const content = document.querySelector('#content');
     content.innerHTML= ""
@@ -122,8 +109,7 @@ function loadAbout() {
     const headingSection = createHeadingSection();
     const aboutSection = createAboutSection();
 
-    content.append(headingSection, aboutSection); // append first because otherwise commitmentSection querySelector won't work
-    createCommitmentSection();
+    content.append(headingSection, aboutSection);
 
     // return content;
 }
