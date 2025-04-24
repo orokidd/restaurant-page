@@ -57,8 +57,8 @@ function createAboutContent() {
         },
         {
             section: 'An-Nabat Farms',
-            class: 'farms',
-            text: 'Chef Nadir created what is now the An-Nabat Farms a decade ago to supply the restaurant with local produce that he was not able to find elsewhere. Built over a reclaimed tin mine, once Algeria’s main economic activity, the farm is a model of sustainability where an industrial site was converted into a pastoral green space. An-Nabat Farms gets its name from the local village it is located within, growing ingredients used by Dar El Yasmine, its sister restaurant JAMPA located next to the farm and TRISARA’s other food outlets. These days Chef Nadir calls the farm a laboratory where he can experiment with new produce for his menu.',
+            class: 'farm',
+            text: 'Chef Nadir created what is now the An-Nabat Farms a decade ago to supply the restaurant with local produce that he was not able to find elsewhere. Built over a reclaimed tin mine, once Algeria’s main economic activity, the farm is a model of sustainability where an industrial site was converted into a pastoral green space. An-Nabat Farms gets its name from the local village it is located within, growing ingredients used by Dar El Yasmine. These days Chef Nadir calls the farm a laboratory where he can experiment with new produce for his menu.',
             image: farm1
         }
     ]
@@ -106,6 +106,15 @@ function createAboutSection() {
             })
 
             sectionContainer.append(allMemberContainer)
+        }
+
+        if (about.image) {
+            const sectionImage = document.createElement('img')
+
+            sectionImage.className = `${about.class}-image`
+            sectionImage.src = about.image
+
+            sectionContainer.insertBefore(sectionImage, sectionContainer.firstChild) // .firstChild is part of DOM object
         }
 
         aboutContainer.append(sectionContainer)

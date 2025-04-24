@@ -264,11 +264,11 @@ nav {
     margin: 180px 0;
 }
 
-.about-section.story h1, .about-section.commitment h1 {
+.about-section.story h1, .about-section.commitment h1, .about-section.farm h1 {
     text-align: center;
     font-size: 48px;
 }
-.about-section.story p, .about-section.commitment p {
+.about-section.story p, .about-section.commitment p, .about-section.farm p {
     text-align: center;
     font-size: 22px;
     max-width: 1000px;
@@ -303,4 +303,15 @@ nav {
     }
     .member h2{
         margin-top: 18px;
+    }
+
+.about-section .farm-image {
+    object-fit: cover;
+    width: 1080px;
+    height: 580px;
+
+    margin: 0 auto;
+}
+    .about-section.farm h1 {
+        margin-top: 48px
     }
