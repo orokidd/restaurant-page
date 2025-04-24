@@ -264,11 +264,11 @@ nav {
     margin: 180px 0;
 }
 
-.about-section.story h1{
+.about-section.story h1, .about-section.commitment h1 {
     text-align: center;
     font-size: 48px;
 }
-.about-section.story p{
+.about-section.story p, .about-section.commitment p {
     text-align: center;
     font-size: 22px;
     max-width: 1000px;
