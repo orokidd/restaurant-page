@@ -10,7 +10,7 @@ function createHeroSection() {
 
     hero.className = "hero";
     heroText.className = "hero-text"
-    heroText.textContent = "Culinique."
+    heroText.textContent = "Dar El Yasmine."
 
     hero.appendChild(heroText);
 
