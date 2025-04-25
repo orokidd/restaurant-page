@@ -123,6 +123,59 @@ function createAboutSection() {
     return aboutContainer;
 }
 
+function createFooterSection() {
+    const footer = document.createElement('div')
+    const footerTop = document.createElement('div')
+    const footerBottom = document.createElement("div")
+
+    // footer top
+    const location = document.createElement('div')
+    const restorauntName = document.createElement('p')
+    const locationName = document.createElement('p')
+
+    const openTime = document.createElement('div')
+    const openTimeLunch = document.createElement('div')
+    const openTimeDinner = document.createElement('div')
+
+    const openTimeLunchDate = document.createElement('div')
+    const openTimeLunchClock = document.createElement('div')
+
+    const openTimeDinnerDate = document.createElement('div')
+    const openTimeDinnerClock = document.createElement('div')
+
+    openTimeLunchDate.textContent = 'Lunch: Friday - Saturday'
+    openTimeLunchClock.textContent = '12:00 - 15:00'
+    openTimeDinnerDate.textContent = 'Dinner: Tuesday - Saturday'
+    openTimeDinnerClock.textContent = '18:00 – 22:30'
+
+    openTimeLunch.append(openTimeLunchDate, openTimeLunchClock)
+    openTimeDinner.append(openTimeDinnerDate, openTimeDinnerClock)
+    openTime.append(openTimeLunch, openTimeDinner)
+
+    // footer bottom
+    const rights = document.createElement('div')
+    const socials = document.createElement('div')
+    const text = document.createElement('p')
+    const socialsInsta = document.createElement('a')
+    const socialsFb = document.createElement('a')
+    const socialsTwt = document.createElement('a')
+
+    text.innerHTML = "&copy;2025 Culinique. All rights reserved."
+    socialsInsta.textContent = "Instagram"
+    socialsFb.textContent = "Facebook"
+    socialsTwt.textContent = "Twitter"
+
+    footerBottom.className = "footer-bottom";
+    rights.className = "copyright";
+    socials.className = "socials";
+
+    rights.append(text)
+    socials.append(socialsInsta, socialsFb, socialsTwt)
+    footerBottom.append(rights, socials)
+
+    return footer
+}
+
 function loadAbout() {
     const content = document.querySelector('#content');
     content.innerHTML= ""
