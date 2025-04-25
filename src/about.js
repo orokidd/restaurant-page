@@ -133,6 +133,11 @@ function createFooterSection() {
     const restorauntName = document.createElement('p')
     const locationName = document.createElement('p')
 
+    restorauntName.textContent = "Dar El Yasmine"
+    locationName.textContent = "218 Atlantic Ave, Brooklyn, NY 11201"
+    
+    location.append(restorauntName, locationName)
+
     const openTime = document.createElement('div')
     const openTimeLunch = document.createElement('div')
     const openTimeDinner = document.createElement('div')
@@ -171,7 +176,10 @@ function createFooterSection() {
 
     rights.append(text)
     socials.append(socialsInsta, socialsFb, socialsTwt)
+
+    footerTop.append(location, openTime)
     footerBottom.append(rights, socials)
+    footer.append(footerTop, footerBottom)
 
     return footer
 }
