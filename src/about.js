@@ -2,7 +2,7 @@ import imgCrew1 from './images/crew2.jpg';
 import imgCrew2 from './images/crew6.jpg';
 import imgCrew3 from './images/crew3.jpg';
 import imgCrew4 from './images/crew5.jpg';
-import imgCrew5 from './images/crew8.jpg';
+import imgBig1 from './images/crew7.jpg';
 import farm1 from './images/farm1.jpg';
 
 function createHeadingSection() {
@@ -60,6 +60,12 @@ function createAboutContent() {
             class: 'farm',
             text: 'Chef Nadir created what is now the An-Nabat Farms a decade ago to supply the restaurant with local produce that he was not able to find elsewhere. Built over a reclaimed tin mine, once Algeria’s main economic activity, the farm is a model of sustainability where an industrial site was converted into a pastoral green space. An-Nabat Farms gets its name from the local village it is located within, growing ingredients used by Dar El Yasmine. These days Chef Nadir calls the farm a laboratory where he can experiment with new produce for his menu.',
             image: farm1
+        },
+        {
+            section: '',
+            class: 'big-picture',
+            text: '',
+            image: imgBig1
         }
     ]
 
@@ -125,14 +131,15 @@ function createAboutSection() {
 
 function createFooterSection() {
     const footer = document.createElement('div')
-    const footerTop = document.createElement('div')
-    const footerBottom = document.createElement("div")
+    footer.className = "about-footer"
 
     // footer top
+    const footerTop = document.createElement('div')
     const location = document.createElement('div')
     const restorauntName = document.createElement('p')
     const locationName = document.createElement('p')
 
+    footerTop.className = "footer-top";
     restorauntName.textContent = "Dar El Yasmine"
     locationName.textContent = "218 Atlantic Ave, Brooklyn, NY 11201"
     
@@ -158,6 +165,7 @@ function createFooterSection() {
     openTime.append(openTimeLunch, openTimeDinner)
 
     // footer bottom
+    const footerBottom = document.createElement("div")
     const rights = document.createElement('div')
     const socials = document.createElement('div')
     const text = document.createElement('p')
