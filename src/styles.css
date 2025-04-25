@@ -316,13 +316,29 @@ nav {
         margin-top: 48px
     }
 
+
+
 .about-footer > .footer-top {
     display: flex;
     justify-content: space-between;
     
     max-width: 1800px;
-    margin: 16px auto;
+    margin: 68px auto;
     color: rgb(62, 84, 62)
+    }
+    .container-location p:first-child {
+        font-size: 28px;
+    }
+    .container-location p:last-child {
+        font-size: 18px;
+    }
+    .opentime div:first-child {
+        font-size: 28px;
+        text-align: end;
+    }
+    .opentime div:last-child {
+        font-size: 18px;
+        text-align: end;
     }
 
 .about-footer > .footer-bottom {

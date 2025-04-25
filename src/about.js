@@ -140,50 +140,42 @@ function createFooterSection() {
     const locationName = document.createElement('p')
 
     footerTop.className = "footer-top";
+    location.className = "container-location"
     restorauntName.textContent = "Dar El Yasmine"
-    locationName.textContent = "218 Atlantic Ave, Brooklyn, NY 11201"
+    locationName.innerHTML = `218 Atlantic Ave,<br>Brooklyn, NY 11201`
     
     location.append(restorauntName, locationName)
 
     const openTime = document.createElement('div')
     const openTimeLunch = document.createElement('div')
-    const openTimeDinner = document.createElement('div')
 
     const openTimeLunchDate = document.createElement('div')
     const openTimeLunchClock = document.createElement('div')
 
-    const openTimeDinnerDate = document.createElement('div')
-    const openTimeDinnerClock = document.createElement('div')
-
-    openTimeLunchDate.textContent = 'Lunch: Friday - Saturday'
-    openTimeLunchClock.textContent = '12:00 - 15:00'
-    openTimeDinnerDate.textContent = 'Dinner: Tuesday - Saturday'
-    openTimeDinnerClock.textContent = '18:00 – 22:30'
+    openTime.className = "container-opentime"
+    openTimeLunch.className = "opentime"
+    openTimeLunchDate.textContent = 'Thursday - Sunday'
+    openTimeLunchClock.textContent = '16:00 - 22:00'
 
     openTimeLunch.append(openTimeLunchDate, openTimeLunchClock)
-    openTimeDinner.append(openTimeDinnerDate, openTimeDinnerClock)
-    openTime.append(openTimeLunch, openTimeDinner)
+    openTime.append(openTimeLunch)
 
     // footer bottom
     const footerBottom = document.createElement("div")
     const rights = document.createElement('div')
     const socials = document.createElement('div')
     const text = document.createElement('p')
-    const socialsInsta = document.createElement('a')
-    const socialsFb = document.createElement('a')
-    const socialsTwt = document.createElement('a')
+    const socialsEmail = document.createElement('a')
 
-    text.innerHTML = "&copy;2025 Culinique. All rights reserved."
-    socialsInsta.textContent = "Instagram"
-    socialsFb.textContent = "Facebook"
-    socialsTwt.textContent = "Twitter"
+    text.innerHTML = "&copy; 2025 Dar El Yasmine"
+    socialsEmail.textContent = "reservations@deyrestaurant.com"
 
     footerBottom.className = "footer-bottom";
     rights.className = "copyright";
     socials.className = "socials";
 
     rights.append(text)
-    socials.append(socialsInsta, socialsFb, socialsTwt)
+    socials.append(socialsEmail)
 
     footerTop.append(location, openTime)
     footerBottom.append(rights, socials)

@@ -101,21 +101,17 @@ function createFooter() {
     const rights = document.createElement('div')
     const socials = document.createElement('div')
     const text = document.createElement('p')
-    const socialsInsta = document.createElement('a')
-    const socialsFb = document.createElement('a')
-    const socialsTwt = document.createElement('a')
+    const socialsEmail = document.createElement('a')
 
-    text.innerHTML = "&copy;2025 Culinique. All rights reserved."
-    socialsInsta.textContent = "Instagram"
-    socialsFb.textContent = "Facebook"
-    socialsTwt.textContent = "Twitter"
+    text.innerHTML = "&copy; 2025 Dar El Yasmine"
+    socialsEmail.textContent = "reservations@deyrestaurant.com"
 
     section.className = "footer";
     rights.className = "copyright";
     socials.className = "socials";
 
     rights.append(text)
-    socials.append(socialsInsta, socialsFb, socialsTwt)
+    socials.append(socialsEmail)
     section.append(rights, socials)
 
     return section
