@@ -190,8 +190,9 @@ function loadAbout() {
 
     const headingSection = createHeadingSection();
     const aboutSection = createAboutSection();
+    const footerSection = createFooterSection();
 
-    content.append(headingSection, aboutSection);
+    content.append(headingSection, aboutSection, footerSection);
 
     // return content;
 }
