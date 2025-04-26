@@ -46,17 +46,30 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     max-width: 1800px;
     margin: 20px auto;
+    margin-top: 48px;
+    font-size: 18px ;
 }
-    nav button {
-        background-color: none;
-        border: none;
+    .logo {
+        flex: 1;
     }
-    nav button:hover {
+
+    .navigations {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav {
+        border: none;
+        background: none;
+        text-decoration:none;
+    }
+    .nav:hover {
         cursor: pointer;
+        color: rgb(62, 84, 62);;
     }
 
 .hero {
