@@ -44,13 +44,17 @@ body {
     background-color:rgb(255, 247, 235)
 }
 
-nav {
+header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    max-width: 800px;
+    max-width: 1800px;
     margin: 20px auto;
 }
+    nav button {
+        background-color: none;
+        border: none;
+    }
     nav button:hover {
         cursor: pointer;
     }
