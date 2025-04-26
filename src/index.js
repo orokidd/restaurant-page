@@ -14,13 +14,13 @@ import { loadAbout } from "./about";
 })();
 
 function handleNavClick(nav) {
-    if (nav.classList.contains("home")) {
+    if (nav.id === "home") {
         loadHome();
     }
-    if (nav.classList.contains("menu")) {
+    if (nav.id === "menu") {
         loadMenu();
     }
-    if (nav.classList.contains("about")) {
+    if (nav.id === "about") {
         loadAbout();
     }
 }

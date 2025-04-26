@@ -61,11 +61,11 @@ header {
         flex: 1;
         display: flex;
         justify-content: flex-end;
+        gap: 60px;
     }
     .nav {
         border: none;
         background: none;
-        text-decoration:none;
     }
     .nav:hover {
         cursor: pointer;
