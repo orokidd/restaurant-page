@@ -40,6 +40,12 @@
   }
 
 /* Own CSS */
+@font-face {
+    font-family: briar;
+    src: url(./font/Briar\ Display.otf);
+    font-weight: 400;
+}
+
 body {
     background-color:rgb(255, 247, 235)
 }
@@ -51,10 +57,13 @@ header {
     max-width: 1800px;
     margin: 20px auto;
     margin-top: 48px;
-    font-size: 18px ;
+    
 }
     .logo {
         flex: 1;
+        font-family: briar;
+        font-size: 28px ;
+        color: rgb(45, 57, 45);
     }
 
     .navigations {
@@ -66,13 +75,14 @@ header {
     .nav {
         border: none;
         background: none;
+        font-size: 18px ;
     }
     .nav:hover {
         cursor: pointer;
-        color: rgb(62, 84, 62);;
+        color: rgb(45, 57, 45);
     }
     .nav.active {
-        color: rgb(62, 84, 62);;
+        color: rgb(45, 57, 45);
     }
 
 .hero {
