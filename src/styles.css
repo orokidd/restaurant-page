@@ -71,6 +71,9 @@ header {
         cursor: pointer;
         color: rgb(62, 84, 62);;
     }
+    .nav.active {
+        color: rgb(62, 84, 62);;
+    }
 
 .hero {
     background-image: url(./images/5.jpg);
