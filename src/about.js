@@ -184,6 +184,16 @@ function createFooterSection() {
     return footer
 }
 
+function changeActivePage() {
+    const allNav = document.querySelectorAll(".nav")
+    const selectedNav = document.querySelector("#about")
+
+    allNav.forEach(nav => {
+        nav.className = "nav"
+    })
+    selectedNav.classList.add("active")
+}
+
 function loadAbout() {
     const content = document.querySelector('#content');
     content.innerHTML= ""
@@ -193,6 +203,8 @@ function loadAbout() {
     const footerSection = createFooterSection();
 
     content.append(headingSection, aboutSection, footerSection);
+
+    changeActivePage()
 
     // return content;
 }

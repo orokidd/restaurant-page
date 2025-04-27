@@ -87,6 +87,16 @@ function createMenuSection() {
     return menuContainer;
 }
 
+function changeActivePage() {
+    const allNav = document.querySelectorAll(".nav")
+    const selectedNav = document.querySelector("#menu")
+
+    allNav.forEach(nav => {
+        nav.className = "nav"
+    })
+    selectedNav.classList.add("active")
+}
+
 function loadMenu() {
     const content = document.querySelector('#content');
     content.innerHTML= ""
@@ -95,6 +105,8 @@ function loadMenu() {
     const menuSection = createMenuSection();
 
     content.append(headingSection, menuSection);
+
+    changeActivePage();
 
     // return content;
 }
