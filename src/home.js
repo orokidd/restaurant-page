@@ -152,14 +152,12 @@ function createNewItemSection() {
             const contentHeader = document.createElement("h2")
             const contentText = document.createElement("p")
 
-            itemContent.className = "content"
+            itemContent.className = "item-content"
             contentHeader.textContent = content.header
             contentText.textContent = content.text
 
             itemContent.append(contentHeader, contentText)
             itemContainer.append(itemContent)
-            innerContainer.appendChild(itemContainer)
-            container.append(innerContainer)
         })
     }
 
@@ -169,13 +167,15 @@ function createNewItemSection() {
             imgElement.className = "new-item-img"
             imgElement.alt = "Delicious Algerian Dish"
             itemContainer.appendChild(imgElement)
-            innerContainer.appendChild(itemContainer)
-            container.append(innerContainer)
         }   
+
+        innerContainer.appendChild(itemContainer);
 
     })
 
+    container.append(innerContainer)
     return container
+
 }
 
 function createFooter() {
