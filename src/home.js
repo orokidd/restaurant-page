@@ -122,29 +122,29 @@ function createEnvironmentSection() {
 
 function createNewItemSection() {
     const container = document.createElement("div")
-    const innerContainer = document.createElement("div")
+    const newItemContainer = document.createElement("div")
     const headerText = document.createElement("h1")
     const newItemContent = [
         {items: [
-            {header: 'Merguez', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'},
-            {header: 'Chorba', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'}
+            {header: 'Merguez', text: 'Spicy lamb or beef sausages, full of rich North African spices like cumin, paprika, and harissa.'},
+            {header: 'Chorba', text: 'A light tomato-based soup made with lamb or chicken, vermicelli (or small pasta), chickpeas, and fresh herbs like cilantro.'}
         ]}, 
         {image: imgFood5},
         {items: [
-            {header: 'Makroud', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'},
-            {header: 'Dolma', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'}
+            {header: 'Makroud', text: `A semolina pastry stuffed with dates or almonds, shaped into diamonds, and fried or baked.`},
+            {header: 'Dolma', text: 'Vegetables like peppers, zucchini, or cabbage leaves stuffed with minced meat and rice, cooked in a flavorful tomato sauce.'}
         ]}
     ]
 
     container.className = "new-items"
-    innerContainer.className = "items-container"
+    newItemContainer.className = "items-container"
     headerText.textContent = "Explore Our Newest Items"
     
     container.appendChild(headerText)
 
     newItemContent.forEach(item => {
-        const itemContainer = document.createElement("div")
-        itemContainer.className = "section"
+        const newItemSection = document.createElement("div")
+        newItemSection.className = "section"
 
         if (item.items) {
             item.items.forEach(content => {
@@ -157,7 +157,7 @@ function createNewItemSection() {
             contentText.textContent = content.text
 
             itemContent.append(contentHeader, contentText)
-            itemContainer.append(itemContent)
+            newItemSection.append(itemContent)
         })
     }
 
@@ -166,14 +166,14 @@ function createNewItemSection() {
             imgElement.src = item.image
             imgElement.className = "new-item-img"
             imgElement.alt = "Delicious Algerian Dish"
-            itemContainer.appendChild(imgElement)
+            newItemSection.appendChild(imgElement)
         }   
 
-        innerContainer.appendChild(itemContainer);
+        newItemContainer.appendChild(newItemSection);
 
     })
 
-    container.append(innerContainer)
+    container.append(newItemContainer)
     return container
 
 }

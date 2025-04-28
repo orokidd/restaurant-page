@@ -229,6 +229,7 @@ header {
     .new-items > h1 {
         text-align: center;
         font-size: 48px;
+        margin-bottom: 60px
     }
     .new-items > .items-container {
         display: flex;
@@ -245,6 +246,12 @@ header {
         height: 720px;
         object-fit: cover;
         border-radius: 260px;
+    }
+    .item-content > h2 {
+        font-size: 38px
+    }
+    .item-content > p {
+        font-size: 22px
     }
 
 .booking {
