@@ -160,6 +160,16 @@ function createNewItemSection() {
         })
         container.appendChild(itemContainer)
     }
+
+        if (item.image) {
+            const imgElement = document.createElement("img")
+            imgElement.src = item.image
+            imgElement.className = "new-item-img"
+            imgElement.alt = "Delicious Algerian Dish"
+            itemContainer.appendChild(imgElement)
+            container.appendChild(itemContainer)
+        }   
+
     })
 
     return container
