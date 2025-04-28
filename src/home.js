@@ -3,6 +3,7 @@ import imgFood1 from './images/food1.jpg';
 import imgFood2 from './images/food2.jpg';
 import imgFood3 from './images/food3.jpg';
 import imgFood4 from './images/food4.jpg';
+import imgEnvironment from './images/environment.jpg'
 
 function createHeroSection() {
     const hero = document.createElement("div")
@@ -10,7 +11,7 @@ function createHeroSection() {
 
     hero.className = "hero";
     heroText.className = "hero-text"
-    heroText.textContent = "Dar El Yasmine."
+    heroText.textContent = "Authentic Algerian Cuisine."
 
     hero.appendChild(heroText);
 
@@ -52,7 +53,7 @@ function createMenuSection() {
     const section = document.createElement("div")
     const headerText = document.createElement("h1")
     const menuList = document.createElement("ul")
-    const menus = ['Ayam Bakar','Nasi Goreng','Gado-gado','Soto Makassar'];
+    const menus = ['Couscous','Chakhchoukha','Mhajeb','Rechta'];
     const imgFoods = [imgFood1, imgFood2, imgFood3, imgFood4];
 
     section.className = "menu";
@@ -96,6 +97,28 @@ function createBookingSection() {
     return section;
 }
 
+function createEnvironmentSection() {
+    const container = document.createElement("div")
+    const headerText = document.createElement("h1")
+    const paraText = document.createElement("p")
+    const image = document.createElement("img");
+    
+    container.className = "environment";
+    headerText.className = "header";
+    paraText.className = "text";
+    image.className = "img-environment" 
+
+    image.src = imgEnvironment;
+    image.alt = 'Image of restaurant';
+
+    headerText.textContent = "Our Environment"
+    paraText.textContent = "The restraurant offers a stunning ambience, blending elegant decor with a warm and inviting atmosphere. With soft lighting, stylish interiors, and thoughtful details, it's the perfect setting for an unforgettable dining experience"
+
+    container.append(headerText, paraText, image)
+
+    return container
+}
+
 function createFooter() {
     const section = document.createElement("div")
     const rights = document.createElement('div')
@@ -134,10 +157,11 @@ function loadHome() {
     const heroSection = createHeroSection();
     const secondSection = createSecondSection();
     const thirdSection = createMenuSection();
+    const environmentSection = createEnvironmentSection()
     const fourthSection = createBookingSection();
     const footerSection = createFooter();
 
-    content.append(heroSection, secondSection, thirdSection, fourthSection, footerSection);
+    content.append(heroSection, secondSection, thirdSection, environmentSection, fourthSection, footerSection);
 
     changeActivePage()
 
