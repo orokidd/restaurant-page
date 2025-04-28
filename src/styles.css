@@ -221,6 +221,32 @@ header {
         border-radius: 40px;
     }
 
+.new-items {
+        max-width: 1800px;
+        margin: 0 auto;
+        margin-top: 280px;
+}
+    .new-items > h1 {
+        text-align: center;
+        font-size: 48px;
+    }
+    .new-items > .items-container {
+        display: flex;
+        gap: 100px;
+    }
+    .items-container > .section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .new-item-img {
+        width: 100%;
+        height: 720px;
+        object-fit: cover;
+        border-radius: 260px;
+    }
+
 .booking {
     max-width: 1800px;
     margin: 0 auto;

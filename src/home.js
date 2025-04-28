@@ -122,6 +122,7 @@ function createEnvironmentSection() {
 
 function createNewItemSection() {
     const container = document.createElement("div")
+    const innerContainer = document.createElement("div")
     const headerText = document.createElement("h1")
     const newItemContent = [
         {items: [
@@ -136,9 +137,9 @@ function createNewItemSection() {
     ]
 
     container.className = "new-items"
+    innerContainer.className = "items-container"
     headerText.textContent = "Explore Our Newest Items"
     
-
     container.appendChild(headerText)
 
     newItemContent.forEach(item => {
@@ -157,8 +158,9 @@ function createNewItemSection() {
 
             itemContent.append(contentHeader, contentText)
             itemContainer.append(itemContent)
+            innerContainer.appendChild(itemContainer)
+            container.append(innerContainer)
         })
-        container.appendChild(itemContainer)
     }
 
         if (item.image) {
@@ -167,7 +169,8 @@ function createNewItemSection() {
             imgElement.className = "new-item-img"
             imgElement.alt = "Delicious Algerian Dish"
             itemContainer.appendChild(imgElement)
-            container.appendChild(itemContainer)
+            innerContainer.appendChild(itemContainer)
+            container.append(innerContainer)
         }   
 
     })
