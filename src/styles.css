@@ -248,7 +248,9 @@ header {
         border-radius: 260px;
     }
     .item-content > h2 {
-        font-size: 38px
+        font-size: 38px;
+        border-bottom: 2px solid rgb(62, 84, 62);
+        margin-bottom: 16px
     }
     .item-content > p {
         font-size: 22px
