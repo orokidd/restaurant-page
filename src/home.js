@@ -3,6 +3,7 @@ import imgFood1 from './images/food1.jpg';
 import imgFood2 from './images/food2.jpg';
 import imgFood3 from './images/food3.jpg';
 import imgFood4 from './images/food4.jpg';
+import imgFood5 from './images/food5.jpg';
 import imgEnvironment from './images/environment.jpg'
 
 function createHeroSection() {
@@ -112,9 +113,54 @@ function createEnvironmentSection() {
     image.alt = 'Image of restaurant';
 
     headerText.textContent = "Our Environment"
-    paraText.textContent = "The restraurant offers a stunning ambience, blending elegant decor with a warm and inviting atmosphere. With soft lighting, stylish interiors, and thoughtful details, it's the perfect setting for an unforgettable dining experience"
+    paraText.textContent = "Dar El Yasmine offers a stunning ambience, blending elegant decor with a warm and inviting atmosphere. With soft lighting, stylish interiors, and thoughtful details, it's the perfect setting for an unforgettable dining experience"
 
     container.append(headerText, paraText, image)
+
+    return container
+}
+
+function createNewItemSection() {
+    const container = document.createElement("div")
+    const headerText = document.createElement("h1")
+    const newItemContent = [
+        {items: [
+            {header: 'Merguez', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'},
+            {header: 'Chorba', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'}
+        ]}, 
+        {image: imgFood5},
+        {items: [
+            {header: 'Makroud', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'},
+            {header: 'Dolma', text: 'Tender beef filets marinated with a rich blend of spices and slow-cooked to perfection'}
+        ]}
+    ]
+
+    container.className = "new-items"
+    headerText.textContent = "Explore Our Newest Items"
+    
+
+    container.appendChild(headerText)
+
+    newItemContent.forEach(item => {
+        const itemContainer = document.createElement("div")
+        itemContainer.className = "section"
+
+        if (item.items) {
+            item.items.forEach(content => {
+            const itemContent = document.createElement("div")
+            const contentHeader = document.createElement("h2")
+            const contentText = document.createElement("p")
+
+            itemContent.className = "content"
+            contentHeader.textContent = content.header
+            contentText.textContent = content.text
+
+            itemContent.append(contentHeader, contentText)
+            itemContainer.append(itemContent)
+        })
+        container.appendChild(itemContainer)
+    }
+    })
 
     return container
 }
@@ -158,10 +204,11 @@ function loadHome() {
     const secondSection = createSecondSection();
     const thirdSection = createMenuSection();
     const environmentSection = createEnvironmentSection()
+    const newItemSection = createNewItemSection();
     const fourthSection = createBookingSection();
     const footerSection = createFooter();
 
-    content.append(heroSection, secondSection, thirdSection, environmentSection, fourthSection, footerSection);
+    content.append(heroSection, secondSection, thirdSection, environmentSection, newItemSection, fourthSection, footerSection);
 
     changeActivePage()
 
