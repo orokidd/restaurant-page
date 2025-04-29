@@ -180,8 +180,16 @@ function createNewItemSection() {
 
 function createCusotmerReviewSection() {
     const container = document.createElement("div")
+    const reviewsContainer = document.createElement("div")
     const headerText = document.createElement("h1")
     const paraText = document.createElement("p")
+    const reviewContent = [
+        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
+        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
+        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
+        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
+        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'}
+    ]
 
     container.className = "review";
     headerText.className = "header";
@@ -190,7 +198,26 @@ function createCusotmerReviewSection() {
     headerText.textContent = "What Our Customers Say"
     paraText.textContent = "Dar El Yasmine offers a stunning ambience, blending elegant decor with a warm and inviting atmosphere. With soft lighting, stylish interiors, and thoughtful details, it's the perfect setting for an unforgettable dining experience"
 
+    reviewContent.forEach(content => {
+        const reviewContainer = document.createElement("div")
+        const reviewText = document.createElement("p")
+        const reviewName = document.createElement("h2")
+        const reviewOccupation = document.createElement("p")
 
+        reviewContainer.className = "reviews"
+        reviewText.className = "reviews-text"
+        reviewName.className = "reviews-name"
+        reviewOccupation.className = "reviews-occupation"
+
+        reviewText.textContent = content.review
+        reviewName.textContent = content.name
+        reviewOccupation.textContent = content.occupation
+
+        reviewContainer.append(reviewText, reviewName, reviewOccupation)
+        reviewsContainer.append(reviewContainer)
+    })
+
+    container.appendChild(reviewsContainer)
 
 }
 
