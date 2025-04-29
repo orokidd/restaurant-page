@@ -256,6 +256,35 @@ header {
         font-size: 22px
     }
 
+.reviews {
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-top: 280px;
+    /* padding-bottom: 280px; */
+}
+    .reviews > .header {
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .reviews > .text {
+        text-align: center;
+        font-size: 22px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .reviews-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .review {
+        background-color: rgb(71, 84, 62);;
+        padding: 40px;
+        color: white;
+    }
+
+
 .booking {
     max-width: 1800px;
     margin: 0 auto;

@@ -185,10 +185,10 @@ function createCusotmerReviewSection() {
     const paraText = document.createElement("p")
     const reviewContent = [
         {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
-        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
-        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
-        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
-        {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'}
+        {name: 'Hamza', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
+        {name: 'Azeeza', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
+        {name: 'Maryam', review: 'This restaurant is bussin', occupation: 'Crypto Investor'},
+        {name: 'Ekinn', review: 'This restaurant is bussin', occupation: 'Crypto Investor'}
     ]
 
     container.className = "reviews";
