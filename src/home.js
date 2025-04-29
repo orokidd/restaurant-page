@@ -178,6 +178,22 @@ function createNewItemSection() {
 
 }
 
+function createCusotmerReviewSection() {
+    const container = document.createElement("div")
+    const headerText = document.createElement("h1")
+    const paraText = document.createElement("p")
+
+    container.className = "review";
+    headerText.className = "header";
+    paraText.className = "text";
+
+    headerText.textContent = "What Our Customers Say"
+    paraText.textContent = "Dar El Yasmine offers a stunning ambience, blending elegant decor with a warm and inviting atmosphere. With soft lighting, stylish interiors, and thoughtful details, it's the perfect setting for an unforgettable dining experience"
+
+
+
+}
+
 function createFooter() {
     const section = document.createElement("div")
     const rights = document.createElement('div')
