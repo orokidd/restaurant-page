@@ -191,7 +191,8 @@ function createCusotmerReviewSection() {
         {name: 'Abdul', review: 'This restaurant is bussin', occupation: 'Crypto Investor'}
     ]
 
-    container.className = "review";
+    container.className = "reviews";
+    reviewsContainer.className = "reviews-container";
     headerText.className = "header";
     paraText.className = "text";
 
@@ -204,9 +205,9 @@ function createCusotmerReviewSection() {
         const reviewName = document.createElement("h2")
         const reviewOccupation = document.createElement("p")
 
-        reviewContainer.className = "reviews"
-        reviewText.className = "reviews-text"
-        reviewName.className = "reviews-name"
+        reviewContainer.className = "review"
+        reviewText.className = "review-text"
+        reviewName.className = "review-name"
         reviewOccupation.className = "reviews-occupation"
 
         reviewText.textContent = content.review
@@ -217,7 +218,8 @@ function createCusotmerReviewSection() {
         reviewsContainer.append(reviewContainer)
     })
 
-    container.appendChild(reviewsContainer)
+    container.append(headerText, paraText, reviewsContainer)
+    return container
 
 }
 
@@ -261,10 +263,11 @@ function loadHome() {
     const thirdSection = createMenuSection();
     const environmentSection = createEnvironmentSection()
     const newItemSection = createNewItemSection();
+    const customerReviewsSrction = createCusotmerReviewSection();
     const fourthSection = createBookingSection();
     const footerSection = createFooter();
 
-    content.append(heroSection, secondSection, thirdSection, environmentSection, newItemSection, fourthSection, footerSection);
+    content.append(heroSection, secondSection, thirdSection, environmentSection, newItemSection, customerReviewsSrction, fourthSection, footerSection);
 
     changeActivePage()
 
