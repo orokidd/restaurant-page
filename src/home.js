@@ -185,9 +185,9 @@ function createCusotmerReviewSection() {
     const paraText = document.createElement("p")
     const reviewContent = [
         {name: 'Abdul', review: 'The couscous royal was out of this world. Light, fluffy, and paired perfectly with the tender lamb and hearty vegetables. The chorba was comforting and full of flavor.', occupation: 'Crypto Investor'},
-        {name: 'Hamza', review: 'If you’re craving real Algerian flavors, this is the spot. The mhajeb were spicy and flaky, and the rechta was so delicately seasoned. Wallahi the food was bussin.', occupation: 'Crypto Investor'},
-        {name: 'Azeeza', review: 'From the warm welcome to the last sip of mint tea, everything was perfect. I had the brik à lœuf and tajine zitoune, and both were bursting with flavor. Im deffinetly coming back.', occupation: 'Crypto Investor'},
-        {name: 'Maryam', review: 'Nice place for a quick bite of Algerian street food. The kesra and loubia were tasty, and the portion sizes were generous. The seating area is also very clean and comfortable.', occupation: 'Crypto Investor'}
+        {name: 'Hamza', review: 'If you’re craving real Algerian flavors, this is the spot. The mhajeb were spicy and flaky, and the rechta was so delicately seasoned. Wallahi the food was bussin.', occupation: 'Home Insurance'},
+        {name: 'Azeeza', review: 'From the warm welcome to the last sip of mint tea, everything was perfect. I had the brik à lœuf and tajine zitoune, and both were bursting with flavor. Im deffinetly coming back.', occupation: 'Graphic Designer'},
+        {name: 'Maryam', review: 'Nice place for a quick bite of Algerian street food. The kesra and loubia were tasty, and the portion sizes were generous. The seating area is also very clean and comfortable.', occupation: 'Cardiologist'}
     ]
 
     container.className = "reviews";
