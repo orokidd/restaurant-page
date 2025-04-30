@@ -277,11 +277,26 @@ header {
     .reviews-container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
     }
     .review {
-        background-color: rgb(71, 84, 62);;
-        padding: 40px;
+        flex: 1;
+        min-width: 300px;
+        min-height: 240px;
+        background-color: rgb(64, 84, 62);
+        padding: 24px;
         color: white;
+        border-radius: 24px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .review:hover {
+        box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        transform: translateY(-10px);
+    }
+    .review > .review-text {
+        padding-bottom: 60px;
+        font-size: 18px;
     }
 
 
