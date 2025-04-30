@@ -196,7 +196,7 @@ function createCusotmerReviewSection() {
     paraText.className = "text";
 
     headerText.textContent = "What Our Customers Say"
-    paraText.textContent = "Dar El Yasmine offers a stunning ambience, blending elegant decor with a warm and inviting atmosphere. With soft lighting, stylish interiors, and thoughtful details, it's the perfect setting for an unforgettable dining experience"
+    paraText.textContent = "At our restaurant, every meal is made with care, and every guest is treated like family. We believe great food brings people together—and our customers agree. Take a look at some of the kind words they’ve shared about their experiences with us."
 
     reviewContent.forEach(content => {
         const reviewContainer = document.createElement("div")
