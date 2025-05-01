@@ -367,8 +367,9 @@ header {
     }
 
 .menu-container, .about-container {
-    max-width: 1800px;
-    margin: 0 auto;
+    /* max-width: 1800px;
+    margin: 0 auto; */
+    padding: 0 60px;
 }
     .menu-type-container {
         padding: 40px 0;
@@ -407,6 +408,10 @@ header {
 
 .about-section {
     margin: 180px 0;
+}
+
+.about-section.story, .about-section.commitment, .about-section.farm > p {
+    padding: 16px 60px;
 }
 
 .about-section.story h1, .about-section.commitment h1, .about-section.farm h1 {
@@ -462,13 +467,15 @@ header {
     }
 
 
-
+.about-footer {
+    padding: 0 60px;
+}
 .about-footer > .footer-top {
     display: flex;
     justify-content: space-between;
     
-    max-width: 1800px;
-    margin: 68px auto;
+    /* max-width: 1800px; */
+    margin: 68px 0;
     color: rgb(62, 84, 62)
     }
     .container-location p:first-child {
