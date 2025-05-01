@@ -54,9 +54,10 @@ header {
     display: flex;
     /* justify-content: space-between; */
 
-    max-width: 1800px;
-    margin: 20px auto;
-    margin-top: 48px;
+    /* max-width: 1800px;
+    margin: 20px auto; */
+    padding: 30px 60px;
+    /* margin: 20px 0; */
     
 }
     .logo {
@@ -122,8 +123,9 @@ header {
 .second {
     display: flex;
 
-    max-width: 1800px;
-    margin: 0 auto;
+    /* max-width: 1800px;
+    margin: 0 auto; */
+    padding: 0 60px;
 
 }
     .text-content{
@@ -156,8 +158,9 @@ header {
     }
 
 .menu {
-    max-width: 1800px;
-    margin: 0 auto;
+    /* max-width: 1800px;
+    margin: 0 auto; */
+    padding: 0 60px;
 }
     .menu .header {
         text-align: center;
@@ -197,8 +200,9 @@ header {
     }
 
 .environment {
-    max-width: 1800px;
-    margin: 0 auto;
+    /* max-width: 1800px;
+    margin: 0 auto; */
+    padding: 0 60px;
     margin-top: 280px;
     /* padding-bottom: 280px; */
 }
@@ -222,8 +226,9 @@ header {
     }
 
 .new-items {
-        max-width: 1800px;
-        margin: 0 auto;
+        /* max-width: 1800px;
+        margin: 0 auto; */
+        padding: 0 60px;
         margin-top: 280px;
 }
     .new-items > h1 {
@@ -257,8 +262,9 @@ header {
     }
 
 .reviews {
-    max-width: 1800px;
-    margin: 0 auto;
+    /* max-width: 1800px;
+    margin: 0 auto; */
+    padding: 0 60px;
     margin-top: 280px;
     /* padding-bottom: 280px; */
 }
@@ -304,10 +310,11 @@ header {
 
 
 .booking {
-    max-width: 1800px;
-    margin: 0 auto;
+    /* max-width: 1800px;
+    margin: 0 auto; */
+    padding: 0 60px;
     margin-top: 280px;
-    padding-bottom: 280px;
+    margin-bottom: 280px;
 }
     .booking .header {
         text-align: center;
@@ -346,8 +353,9 @@ header {
     display: flex;
     justify-content: space-between;
 
-    max-width: 1800px;
-    margin: 16px auto;
+    /* max-width: 1800px;
+    margin: 16px auto; */
+    padding: 16px 60px;
     color: rgb(62, 84, 62)
 }
     .socials {
@@ -386,10 +394,10 @@ header {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
     }
-    .food:hover {
+    /* .food:hover {
         transform: translateY(-6px);
         box-shadow: 0 12px 20px rgba(0,0,0,0.1);
-    }
+    } */
     .food-price {
         margin-top: 20px;
     }
