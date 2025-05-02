@@ -273,4 +273,4 @@ function loadHome() {
     // return content;
 }
 
-export { loadHome }
+export { loadHome, createFooter }

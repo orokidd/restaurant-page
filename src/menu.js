@@ -1,3 +1,5 @@
+import { createFooter } from "./home";
+
 function createHeadingSection() {
     const headingContainer = document.createElement("div")
     const headingText = document.createElement("h1")
@@ -103,8 +105,9 @@ function loadMenu() {
 
     const headingSection = createHeadingSection();
     const menuSection = createMenuSection();
+    const footerSection = createFooter();
 
-    content.append(headingSection, menuSection);
+    content.append(headingSection, menuSection, footerSection);
 
     changeActivePage();
 
