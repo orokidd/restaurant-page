@@ -526,4 +526,8 @@ header {
     .new-items > .items-container {
         flex-direction: column;
     }
+
+    .menu-container, .about-container {
+        padding: 0 14px;
+    }
 }
