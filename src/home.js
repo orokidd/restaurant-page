@@ -5,6 +5,7 @@ import imgFood3 from './images/food3.jpg';
 import imgFood4 from './images/food4.jpg';
 import imgFood5 from './images/food5.jpg';
 import imgEnvironment from './images/environment.jpg'
+import foodPlate from './images/foodtransparent.png'
 
 function createHeroSection() {
     const hero = document.createElement("div")
@@ -46,6 +47,34 @@ function createSecondSection() {
     imageContent.append(img)
     textContent.append(headerText, paraText, button)
     section.append(textContent, imageContent);
+
+    return section;
+}
+
+function createPlateSection() {
+    const section = document.createElement("div")
+    const img = document.createElement("img");
+    const headerText = document.createElement("h1")
+    const paraText = document.createElement("p")
+    const button = document.createElement("button")
+
+
+
+    section.className = "plate-container";
+
+    img.src = foodPlate;
+    img.alt = 'Image of food';
+    img.className = "center-plate"
+    headerText.className = "big-text"
+    paraText.className = "text";
+    button.className = "second-button"
+    
+    button.textContent = "Learn More"
+    headerText.textContent = "Dar El Yasmine"
+    paraText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et mauris ligula. Vestibulum sed mi in odio tempus mollis ut vitae est."
+
+
+    section.append(headerText, img, paraText, button);
 
     return section;
 }
@@ -258,7 +287,7 @@ function loadHome() {
     content.innerHTML= ""
 
     const heroSection = createHeroSection();
-    const secondSection = createSecondSection();
+    const secondSection = createPlateSection();
     const thirdSection = createMenuSection();
     const environmentSection = createEnvironmentSection()
     const newItemSection = createNewItemSection();

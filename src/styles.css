@@ -159,6 +159,24 @@ header {
         flex:1;
     }
 
+
+.plate-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+    .big-text {
+        font-size: 11rem;
+        font-family: briar;
+        color: rgb(29, 36, 29);
+    }
+    .center-plate {
+        max-width: 540px;
+        /* position: absolute; */
+    }   
+
 .menu {
     /* max-width: 1800px;
     margin: 0 auto; */
