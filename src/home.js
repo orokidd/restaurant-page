@@ -270,7 +270,7 @@ function createFooter() {
     const text = document.createElement('p')
     const socialsEmail = document.createElement('a')
 
-    text.innerHTML = "&copy; 2025 Dar El Yasmine"
+    text.innerHTML = "&copy; 2025"
     socialsEmail.textContent = "reservations@deyrestaurant.com"
 
     section.className = "footer";

@@ -597,3 +597,9 @@ header {
         padding: 0 14px;
     }
 }
+
+@media screen and (max-width: 420px){
+    .menu, .environment, .new-items, .reviews, .booking, .footer {
+        padding: 0 28px;
+    }
+}
