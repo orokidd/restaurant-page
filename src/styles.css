@@ -47,7 +47,7 @@
 }
 
 body {
-    background-color:rgb(255, 255, 255)
+    background-color:rgb(255, 255, 255);
 }
 
 header {
@@ -165,6 +165,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+
     margin: 100px 0;
 }
     .big-text {
@@ -172,10 +174,20 @@ header {
         font-family: briar;
         color: rgb(29, 36, 29);
     }
+    .plate-container > .image-section {
+        display: flex;
+    }
     .center-plate {
         max-width: 540px;
         /* position: absolute; */
     }   
+    .plate-container p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: center;
+        color: rgb(52, 52, 52);
+    }
 
 .menu {
     /* max-width: 1800px;

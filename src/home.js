@@ -6,6 +6,8 @@ import imgFood4 from './images/food4.jpg';
 import imgFood5 from './images/food5.jpg';
 import imgEnvironment from './images/environment.jpg'
 import foodPlate from './images/foodtransparent.png'
+import foodPlate2 from './images/foodtransparent2.jpg'
+import foodPlate3 from './images/foodtransparent3.jpg'
 
 function createHeroSection() {
     const hero = document.createElement("div")
@@ -53,28 +55,38 @@ function createSecondSection() {
 
 function createPlateSection() {
     const section = document.createElement("div")
+    const imageContent = document.createElement("div")
     const img = document.createElement("img");
+    const img2 = document.createElement("img");
+    const img3 = document.createElement("img");
     const headerText = document.createElement("h1")
     const paraText = document.createElement("p")
     const button = document.createElement("button")
 
-
-
     section.className = "plate-container";
+    imageContent.className = "image-section";
 
     img.src = foodPlate;
+    img2.src = foodPlate2;
+    img3.src = foodPlate3;
     img.alt = 'Image of food';
+
     img.className = "center-plate"
+    img2.className = "center-plate"
+    img3.className = "center-plate"
     headerText.className = "big-text"
     paraText.className = "text";
     button.className = "second-button"
     
     button.textContent = "Learn More"
     headerText.textContent = "Dar El Yasmine"
-    paraText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et mauris ligula. Vestibulum sed mi in odio tempus mollis ut vitae est."
+    paraText.innerHTML = `WHETHER YOU DINE IN OUR ELEGANT DINING ROOM OR SAVOR<br>
+    OFFERINGS THROUGH OUR DELIVERY SERVICE, WE GUARANTEE<br>
+    THAT YOU WILL GET UNFORGETTABLE EMOTIONS AND PLEASURE<br>
+    OF ALGERIAN CUISINE`
 
-
-    section.append(headerText, img, paraText, button);
+    imageContent.append(img2, img, img3);
+    section.append(headerText, imageContent, paraText, button);
 
     return section;
 }
