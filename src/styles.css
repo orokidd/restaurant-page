@@ -170,6 +170,7 @@ header {
     margin: 100px 0;
 }
     .big-text {
+        text-align: center;
         font-size: 11rem;
         font-family: briar;
         color: rgb(29, 36, 29);
@@ -187,6 +188,17 @@ header {
         font-size: 22px;
         text-align: center;
         color: rgb(52, 52, 52);
+    }
+    .plate-container > a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        background: none;
+        color: rgb(46, 46, 46);
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .plate-container > a:hover {
+        color: rgb(85, 85, 85);
     }
 
 .menu {
@@ -534,6 +546,25 @@ header {
     color: rgb(62, 84, 62)
     }
 
+@media screen and (max-width: 1770px){
+    .big-text {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .image-section img:first-of-type,
+    .image-section img:last-of-type {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .big-text {
+        font-size: 4rem;
+    }
+}
+
 @media screen and (max-width: 720px){
     .hero h1 {
         color: white;
@@ -547,13 +578,16 @@ header {
         padding: 20px 20px;
     }
     .logo {
-        font-size: 24px ;
+        font-size: 18px ;
     }
     .navigations {
         gap: 20px;
     }
     .nav {
         font-size: 18px ;
+    }
+    .image-section img {
+        max-width: 360px;
     }
     .new-items > .items-container {
         flex-direction: column;

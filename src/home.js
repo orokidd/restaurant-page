@@ -61,7 +61,7 @@ function createPlateSection() {
     const img3 = document.createElement("img");
     const headerText = document.createElement("h1")
     const paraText = document.createElement("p")
-    const button = document.createElement("button")
+    const button = document.createElement("a")
 
     section.className = "plate-container";
     imageContent.className = "image-section";
@@ -76,9 +76,9 @@ function createPlateSection() {
     img3.className = "center-plate"
     headerText.className = "big-text"
     paraText.className = "text";
-    button.className = "second-button"
+    button.className = "plate-link"
     
-    button.textContent = "Learn More"
+    button.textContent = "VIEW MENU"
     headerText.textContent = "Dar El Yasmine"
     paraText.innerHTML = `WHETHER YOU DINE IN OUR ELEGANT DINING ROOM OR SAVOR<br>
     OFFERINGS THROUGH OUR DELIVERY SERVICE, WE GUARANTEE<br>
