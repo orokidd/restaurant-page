@@ -160,26 +160,8 @@ function createFooterSection() {
     openTimeLunch.append(openTimeLunchDate, openTimeLunchClock)
     openTime.append(openTimeLunch)
 
-    // footer bottom
-    const footerBottom = document.createElement("div")
-    const rights = document.createElement('div')
-    const socials = document.createElement('div')
-    const text = document.createElement('p')
-    const socialsEmail = document.createElement('a')
-
-    text.innerHTML = "&copy; 2025"
-    socialsEmail.textContent = "reservations@deyrestaurant.com"
-
-    footerBottom.className = "footer-bottom";
-    rights.className = "copyright";
-    socials.className = "socials";
-
-    rights.append(text)
-    socials.append(socialsEmail)
-
     footerTop.append(location, openTime)
-    footerBottom.append(rights, socials)
-    footer.append(footerTop, footerBottom)
+    footer.append(footerTop)
 
     return footer
 }

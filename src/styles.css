@@ -461,7 +461,6 @@ header {
     justify-content: space-between;
     
     margin: 16px auto;
-    max-width: 1800px;
     color: rgb(62, 84, 62)
     }
 
@@ -515,8 +514,12 @@ header {
     }
 
     .menu-container, .about-container {
-        padding: 0 14px;
+        padding: 0 24px;
     }
+    .about-footer {
+    padding: 0 24px;
+    }
+
     .environment .img-environment {
         height: 480px;
     }
