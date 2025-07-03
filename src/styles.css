@@ -31,19 +31,19 @@
     text-wrap: balance;
   }
   ul, li, ol {
-    list-style: none;
     padding-left: 0;
+    list-style: none;
   }
   a {
     text-decoration: none;
     color: black;
   }
 
-/* Own CSS */
+/* Own CSS Start*/
 @font-face {
+    font-weight: 400;
     font-family: briar;
     src: url(./font/Briar\ Display.otf);
-    font-weight: 400;
 }
 
 body {
@@ -56,21 +56,21 @@ header {
 }
     .logo {
         flex: 1;
-        font-family: briar;
         font-size: 28px ;
+        font-family: briar;
         color: rgb(45, 57, 45);
     }
 
     .navigations {
         flex: 1;
+        gap: 60px;
         display: flex;
         justify-content: flex-end;
-        gap: 60px;
     }
     .nav {
         border: none;
+        font-size: 18px;
         background: none;
-        font-size: 18px ;
     }
     .nav:hover {
         cursor: pointer;
@@ -95,14 +95,14 @@ header {
 
 .hero, .heading {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    background-size: cover; /* Scales image to fit */
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 960px;
     margin: 0 auto;
+    min-height: 960px;
+    background-size: cover; /* Scales image to fit */
+    background-position: center;
+    background-repeat: no-repeat;
 }
     .hero h1 {
         color: white;
@@ -118,52 +118,19 @@ header {
 
 /* Empty white space for each section */
 .plate-container, .menu, .environment, .new-items, .reviews, .booking {
-    padding: 90px 60px;
+    padding: 120px 60px;
 }
-
-/* .second {
-    display: flex;
-}
-    .text-content{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        font-size: 24px;
-    }
-    .second-button {
-        font-size: 18px;
-        max-width: 130px;
-        min-height: 48px;
-        margin-top: 24px;
-        border: none;
-        border-radius: 40px;
-
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: rgb(62, 84, 62);
-        color: rgb(255, 255, 255);
-    }
-    .second-button:hover {
-        cursor: pointer;
-        transform: translateY(-6px);
-        box-shadow: 0 12px 20px rgba(0,0,0,0.1);
-    }
-    .image-content {
-        flex:1;
-    } */
-
 
 .plate-container {
+    gap: 40px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
 }
     .big-text {
-        text-align: center;
         font-size: 11rem;
+        text-align: center;
         font-family: briar;
         color: rgb(29, 36, 29);
     }
@@ -172,79 +139,77 @@ header {
     }
     .center-plate {
         max-width: 540px;
-        /* position: absolute; */
     }   
     .plate-container p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400;
         font-size: 22px;
+        font-weight: 400;
         text-align: center;
         color: rgb(52, 52, 52);
+        font-family: Arial, Helvetica, sans-serif;
     }
     .plate-container > a {
-        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
         font-size: 16px;
         background: none;
-        color: rgb(46, 46, 46);
         font-weight: 600;
-        cursor: pointer;
+        color: rgb(46, 46, 46);
+        font-family: Arial, Helvetica, sans-serif;
     }
     .plate-container > a:hover {
         color: rgb(85, 85, 85);
     }
 
-.menu {
-}
+/* Home page menu */
+
     .menu .header {
-        text-align: center;
         font-size: 48px;
+        text-align: center;
     }    
     .menu ul {
+        gap: 40px;
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
     
         margin-top: 60px
     }
     .menu-list > li {
         flex: 1;
 
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border: 2px solid rgb(62, 84, 62);
-        border-radius: 18px;
-        min-width: 280px;
         padding: 20px;
+        min-width: 280px;
+        border-radius: 18px;
+        border: 2px solid rgb(62, 84, 62);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .menu-list > li:hover {
-        
-        box-shadow: 0 12px 20px rgba(0,0,0,0.1);
-        transform: translateY(-10px);
         cursor: pointer;
+        transform: translateY(-10px);
+        box-shadow: 0 12px 20px rgba(0,0,0,0.1);
     }
     .menu-list > li > img {
-        border-radius: 14px;
-        object-fit: cover;
-        height: 400px;
         width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 14px;
     }
     .menu-list > li > p {
-        color: rgb(31, 31, 31);
-        margin-top: 12px;
         font-size: 22px;
+        margin-top: 12px;
+        color: rgb(31, 31, 31);
     }
 
-.environment {
-}
+/* Home page environment */
+
     .environment .header {
-        text-align: center;
         font-size: 48px;
+        text-align: center;
     }
 
     .environment .text {
-        text-align: center;
+        margin: 0 auto;
         font-size: 22px;
         max-width: 800px;
-        margin: 0 auto;
+        text-align: center;
         margin-bottom: 60px;
     }
     .environment .img-environment {
@@ -254,16 +219,16 @@ header {
         border-radius: 40px;
     }
 
-.new-items {
-}
-    .new-items > h1 {
-        text-align: center;
+/* Home page new items */
+
+    .new-items  .header {
         font-size: 48px;
-        margin-bottom: 60px
+        text-align: center;
+        margin-bottom: 60px;
     }
     .new-items > .items-container {
-        display: flex;
         gap: 100px;
+        display: flex;
     }
     .items-container > .section {
         flex: 1;
@@ -279,84 +244,83 @@ header {
     }
     .item-content > h2 {
         font-size: 38px;
+        margin-bottom: 16px;
         border-bottom: 2px solid rgb(62, 84, 62);
-        margin-bottom: 16px
     }
     .item-content > p {
         font-size: 22px
     }
 
-.reviews {
-}
+/* Home page reviews */
+
     .reviews > .header {
-        text-align: center;
         font-size: 48px;
+        text-align: center;
     }
 
     .reviews > .text {
-        text-align: center;
+        margin: 0 auto;
         font-size: 22px;
         max-width: 800px;
-        margin: 0 auto;
+        text-align: center;
         margin-bottom: 60px;
     }
     .reviews-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         gap: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .review {
         flex: 1;
-        min-width: 300px;
-        min-height: 240px;
-        background-color: rgb(64, 84, 62);
+
         padding: 24px;
         color: white;
+        min-width: 300px;
+        min-height: 240px;
         border-radius: 24px;
+        background-color: rgb(64, 84, 62);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .review:hover {
-        box-shadow: 0 12px 20px rgba(0,0,0,0.1);
         transform: translateY(-10px);
+        box-shadow: 0 12px 20px rgba(0,0,0,0.1);
     }
     .review > .review-text {
-        padding-bottom: 60px;
         font-size: 18px;
+        padding-bottom: 60px;
     }
     .review > .reviews-occupation {
         color: rgb(238, 238, 238);
     }
 
 
-.booking {
-}
+/* Home page bookings */
+
     .booking .header {
-        text-align: center;
         font-size: 48px;
+        text-align: center;
     }
 
     .booking .text {
-        text-align: center;
+        margin: 0 auto;
         font-size: 22px;
         max-width: 800px;
-        margin: 0 auto;
+        text-align: center;
     }
     .booking > button {
         display: block;
         margin: 0 auto;
         margin-top: 60px;
-
+        border: none;
         font-size: 18px;
         min-width: 140px;
         min-height: 48px;
         margin-top: 24px;
-        border: none;
         border-radius: 40px;
-
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: rgb(62, 84, 62);
         color: rgb(255, 255, 255);
+        background-color: rgb(62, 84, 62);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .booking > button:hover {
         cursor: pointer;
@@ -367,16 +331,19 @@ header {
 .footer {
     display: flex;
     justify-content: space-between;
-    color: rgb(62, 84, 62);
+
     padding: 10px 60px;
+    color: rgb(62, 84, 62);
 }
     .socials {
-        display: flex;
         gap: 20px;
+        display: flex;
     }
     .socials > a {
         color: rgb(62, 84, 62)
     }
+
+/* Menu page and About page */
 
 .menu-container, .about-container {
     padding: 0 60px;
@@ -387,28 +354,21 @@ header {
     .menu-type-container > h1 {
         font-size: 68px;
         border-bottom: solid 4px rgb(62, 84, 62);
-        /* border-radius: 8px; */
     }
     .foods-container {
+        gap: 20px;
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+
         margin-top: 40px;
     }
     .food {
         flex: 1;
 
-        min-width: 300px;
-        /* border: 2px solid rgb(62, 84, 62);
-        border-radius: 12px; */
         padding: 20px;
+        min-width: 300px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
     }
-    /* .food:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 12px 20px rgba(0,0,0,0.1);
-    } */
     .food-price {
         margin-top: 20px;
     }
@@ -417,27 +377,23 @@ header {
     }
 
 .about-section {
-    margin: 180px 0;
-}
-
-.about-section.story, .about-section.commitment, .about-section.farm > p {
-    padding: 16px 60px;
+    padding: 120px 0;
 }
 
 .about-section.story h1, .about-section.commitment h1, .about-section.farm h1 {
-    text-align: center;
     font-size: 48px;
+    text-align: center;
 }
 .about-section.story p, .about-section.commitment p, .about-section.farm p {
-    text-align: center;
+    margin: 0 auto;
     font-size: 22px;
     max-width: 1000px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .about-section.members > h1 {
-    text-align: center;
     font-size: 48px;
+    text-align: center;
 }
 .about-section.members > p {
     font-size: 22px;
@@ -446,8 +402,8 @@ header {
 
 .members-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 
     margin: 60px 0;
 }
@@ -456,20 +412,18 @@ header {
         width: 280px;
     }
     .member img{
-        /* border-radius: 12px; */
-        object-fit: cover;
-        height: 360px;
         width: 100%;
+        height: 360px;
+        object-fit: cover;
     }
     .member h2{
         margin-top: 18px;
     }
 
 .about-section .farm-image {
-    object-fit: cover;
     width: 1080px;
     height: 580px;
-
+    object-fit: cover;
     margin: 0 auto;
 }
     .about-section.farm h1 {
@@ -484,7 +438,6 @@ header {
     display: flex;
     justify-content: space-between;
     
-    /* max-width: 1800px; */
     margin: 68px 0;
     color: rgb(62, 84, 62)
     }
@@ -507,18 +460,19 @@ header {
     display: flex;
     justify-content: space-between;
     
-    max-width: 1800px;
     margin: 16px auto;
+    max-width: 1800px;
     color: rgb(62, 84, 62)
     }
 
-@media screen and (max-width: 1770px){
+/* @media screen and (max-width: 1770px){
+    
+} */
+
+@media screen and (max-width: 1400px){
     .big-text {
         font-size: 8rem;
     }
-}
-
-@media screen and (max-width: 1400px){
     .image-section img:first-of-type,
     .image-section img:last-of-type {
         display: none;
@@ -540,7 +494,7 @@ header {
     }
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 600px){
     header {
         padding: 20px 20px;
     }
@@ -566,13 +520,13 @@ header {
     .environment .img-environment {
         height: 480px;
     }
-}
-
-@media screen and (max-width: 420px){
     .menu, .environment, .new-items, .reviews, .booking {
         padding: 80px 24px;
     }
     .menu-list > li > img {
         height: 320px;
     }
+    .footer {
+    padding: 14px 24px;
+}
 }

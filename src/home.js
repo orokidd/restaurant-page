@@ -22,37 +22,6 @@ function createHeroSection() {
     return hero;
 }
 
-function createSecondSection() {
-    const section = document.createElement("div")
-    const textContent = document.createElement("div")
-    const imageContent = document.createElement("div")
-    const img = document.createElement("img");
-    const headerText = document.createElement("h1")
-    const paraText = document.createElement("p")
-    const button = document.createElement("button")
-
-    img.src = myImage;
-    img.alt = 'Image of food';
-
-    section.className = "second";
-    img.className = "img-food" 
-    textContent.className = "text-content";
-    imageContent.className = "image-content";
-    headerText.className = "header";
-    paraText.className = "text";
-    button.className = "second-button"
-
-    button.textContent = "Learn More"
-    headerText.textContent = "A healthier way now has a seat at the table"
-    paraText.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et mauris ligula. Vestibulum sed mi in odio tempus mollis ut vitae est."
-
-    imageContent.append(img)
-    textContent.append(headerText, paraText, button)
-    section.append(textContent, imageContent);
-
-    return section;
-}
-
 function createPlateSection() {
     const section = document.createElement("div")
     const imageContent = document.createElement("div")
@@ -177,6 +146,7 @@ function createNewItemSection() {
         ]}
     ]
 
+    headerText.className = "header";
     container.className = "new-items"
     newItemContainer.className = "items-container"
     headerText.textContent = "Explore Our Newest Items"
