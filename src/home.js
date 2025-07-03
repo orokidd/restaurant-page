@@ -15,7 +15,7 @@ function createHeroSection() {
 
     hero.className = "hero";
     heroText.className = "hero-text"
-    heroText.textContent = "Authentic Algerian Cuisine."
+    heroText.textContent = "Authentic Algerian Cuisine"
 
     hero.appendChild(heroText);
 
