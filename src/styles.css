@@ -53,12 +53,13 @@ body {
 header {
     display: flex;
     padding: 20px 60px;
+    max-height: 90px;
 }
     .logo {
         flex: 1;
-        font-size: 28px ;
-        font-family: briar;
-        color: rgb(45, 57, 45);
+    }
+    .logo img {
+        height: 100%;
     }
 
     .navigations {
@@ -71,6 +72,8 @@ header {
         border: none;
         font-size: 18px;
         background: none;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .nav:hover {
         cursor: pointer;
@@ -99,21 +102,23 @@ header {
     justify-content: center;
 
     margin: 0 auto;
-    min-height: 960px;
+    min-height: 900px;
     background-size: cover; /* Scales image to fit */
     background-position: center;
     background-repeat: no-repeat;
 }
     .hero h1 {
-        color: white;
+        color: rgb(255, 255, 255);
         font-size: 94px;
         text-align: center;
         padding-bottom: 148px;
-        text-shadow: 0px 6px 18px rgba(28, 28, 28, 0.8);
+        text-shadow: 0px 6px 18px rgba(28, 28, 28, 0.6);
+        font-family: briar;
     }
     .heading h1 {
         color: white;
         font-size: 48px;
+        
     }
 
 /* Empty white space for each section */
@@ -129,9 +134,9 @@ header {
     justify-content: center;
 }
     .big-text {
-        font-size: 11rem;
+        font-size: 8rem;
         text-align: center;
-        font-family: briar;
+        /* font-family: briar; */
         color: rgb(29, 36, 29);
     }
     .plate-container > .image-section {
@@ -164,6 +169,7 @@ header {
     .menu .header {
         font-size: 48px;
         text-align: center;
+        color: rgb(29, 36, 29);
     }    
     .menu ul {
         gap: 40px;
@@ -203,6 +209,7 @@ header {
     .environment .header {
         font-size: 48px;
         text-align: center;
+        color: rgb(29, 36, 29);
     }
 
     .environment .text {
@@ -225,6 +232,7 @@ header {
         font-size: 48px;
         text-align: center;
         margin-bottom: 60px;
+        color: rgb(29, 36, 29);
     }
     .new-items > .items-container {
         gap: 100px;
@@ -256,6 +264,7 @@ header {
     .reviews > .header {
         font-size: 48px;
         text-align: center;
+        color: rgb(29, 36, 29);
     }
 
     .reviews > .text {
@@ -300,6 +309,7 @@ header {
     .booking .header {
         font-size: 48px;
         text-align: center;
+        color: rgb(29, 36, 29);
     }
 
     .booking .text {
@@ -508,6 +518,9 @@ header {
     }
     .image-section img {
         max-width: 360px;
+    }
+    .big-text {
+        font-size: 2.4rem;
     }
     .new-items > .items-container {
         flex-direction: column;

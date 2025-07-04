@@ -15,7 +15,7 @@ function createHeroSection() {
 
     hero.className = "hero";
     heroText.className = "hero-text"
-    heroText.textContent = "Authentic Algerian Cuisine"
+    heroText.textContent = "Dar El Yasmine"
 
     hero.appendChild(heroText);
 
@@ -48,7 +48,7 @@ function createPlateSection() {
     button.className = "plate-link"
     
     button.textContent = "VIEW MENU"
-    headerText.textContent = "Dar El Yasmine"
+    headerText.textContent = "Authentic Algerian Cuisine"
     paraText.innerHTML = `WHETHER YOU DINE IN OUR ELEGANT DINING ROOM OR SAVOR<br>
     OFFERINGS THROUGH OUR DELIVERY SERVICE, WE GUARANTEE<br>
     THAT YOU WILL GET UNFORGETTABLE EMOTIONS AND PLEASURE<br>
@@ -71,7 +71,7 @@ function createMenuSection() {
     headerText.className = "header";
     menuList.className = "menu-list";
 
-    headerText.textContent = "Have a peak at our menu!"
+    headerText.textContent = "Have a peak at our menu"
     menus.forEach((food, index) => {
         const list = document.createElement('li');
         const img = document.createElement('img');
