@@ -282,8 +282,6 @@ function loadHome() {
 
     changeActivePage()
     closeMobileMenu();
-
-    // return content;
 }
 
 export { loadHome, createFooter }

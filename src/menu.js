@@ -115,8 +115,6 @@ function loadMenu() {
 
     changeActivePage();
     closeMobileMenu();
-
-    // return content;
 }
 
 export { loadMenu }

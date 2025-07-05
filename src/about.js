@@ -185,8 +185,6 @@ function loadAbout() {
 
     changeActivePage()
     closeMobileMenu();
-
-    // return content;
 }
 
 export { loadAbout }
