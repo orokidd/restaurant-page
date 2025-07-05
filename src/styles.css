@@ -100,7 +100,7 @@ header {
       min-width: 32px;
     }
     #mobile-menu {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-between;
 
@@ -567,6 +567,7 @@ h1, h2, h3 {
         font-size: 18px ;
     }
     .navigations {
+        display: none;
         gap: 20px;
     }
     .nav {

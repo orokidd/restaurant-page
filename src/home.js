@@ -1,3 +1,4 @@
+import { closeMobileMenu } from './mobile';
 import myImage from './images/food1.png';
 import imgFood1 from './images/food1.jpg';
 import imgFood2 from './images/food2.jpg';
@@ -280,6 +281,7 @@ function loadHome() {
     content.append(heroSection, secondSection, thirdSection, environmentSection, newItemSection, customerReviewsSrction, fourthSection, footerSection);
 
     changeActivePage()
+    closeMobileMenu();
 
     // return content;
 }

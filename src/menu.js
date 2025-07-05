@@ -1,4 +1,5 @@
 import { createFooter } from "./home";
+import { closeMobileMenu } from './mobile';
 
 function createHeadingSection() {
     const headingContainer = document.createElement("div")
@@ -113,6 +114,7 @@ function loadMenu() {
     content.append(headingSection, menuSection, footerSection);
 
     changeActivePage();
+    closeMobileMenu();
 
     // return content;
 }

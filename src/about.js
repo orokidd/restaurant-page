@@ -1,3 +1,4 @@
+import { closeMobileMenu } from './mobile';
 import imgCrew1 from './images/crew2.jpg';
 import imgCrew2 from './images/crew6.jpg';
 import imgCrew3 from './images/crew3.jpg';
@@ -183,6 +184,7 @@ function loadAbout() {
     content.append(headingSection, aboutSection, footerSection);
 
     changeActivePage()
+    closeMobileMenu();
 
     // return content;
 }

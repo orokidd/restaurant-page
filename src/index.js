@@ -2,6 +2,7 @@ import "./styles.css"
 import { loadHome } from "./home";
 import { loadMenu } from "./menu";
 import { loadAbout } from "./about";
+import { menuButtonListener, closeMenuButtonListener } from "./mobile"
 
 (function app() {
     loadHome()
@@ -11,6 +12,8 @@ import { loadAbout } from "./about";
         nav.addEventListener('click', () => handleNavClick(nav))
     })
 
+    menuButtonListener();
+    closeMenuButtonListener();
 })();
 
 function handleNavClick(nav) {
