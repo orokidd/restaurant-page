@@ -78,14 +78,48 @@ header {
         border: none;
         font-size: 18px;
         background: none;
-        /* font-weight: 400; */
+        font-weight: 500;
+        color: rgb(29, 36, 29);
+        transition: all ease 0.3s;
     }
     .nav:hover {
         cursor: pointer;
-        color: rgb(45, 57, 45);
+        transform: translateY(-3px);
     }
     .nav.active {
-        color: rgb(45, 57, 45);
+        color: rgb(74, 91, 74);
+    }
+    .mobile-menu-button {
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-button {
+      background: none;
+      border: none;
+      min-width: 32px;
+    }
+    #mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        color: white;
+        background: rgb(111, 121, 111);
+    }
+    #mobile-menu a {
+        font-size: 38px ;
+    }
+    #mobile-menu .close-button {
+        display: flex;
+        justify-content: end;
+    }
+    .close-button svg {
+        max-width: 32px;
     }
 
 .hero {
@@ -258,6 +292,7 @@ h1, h2, h3 {
     }
     .items-container > .section {
         flex: 1;
+        gap: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -352,7 +387,7 @@ h1, h2, h3 {
     }
     .booking > button:hover {
         cursor: pointer;
-        transform: translateY(-6px);
+        transform: translateY(-4px);
         box-shadow: 0 12px 20px rgba(0,0,0,0.1);
     }
 
@@ -379,7 +414,7 @@ h1, h2, h3 {
     .menu-type-container {
         padding: 40px 0;
     }
-    .menu-type-container > h1 {
+    .menu-type-container > .menu-type-name {
         font-size: 68px;
         border-bottom: solid 4px rgb(62, 84, 62);
     }
@@ -475,11 +510,11 @@ h1, h2, h3 {
     .container-location p:last-child {
         font-size: 18px;
     }
-    .opentime div:first-child {
+    .container-opentime p:first-child {
         font-size: 28px;
         text-align: end;
     }
-    .opentime div:last-child {
+    .container-opentime p:last-child {
         font-size: 18px;
         text-align: end;
     }
@@ -510,6 +545,9 @@ h1, h2, h3 {
     .big-text {
         font-size: 4rem;
     }
+    .members-container {
+    gap: 60px;
+}
 }
 
 @media screen and (max-width: 720px){
@@ -523,7 +561,7 @@ h1, h2, h3 {
 
 @media screen and (max-width: 600px){
     header {
-        padding: 20px 20px;
+        padding: 20px 28px;
     }
     .logo {
         font-size: 18px ;
@@ -534,6 +572,11 @@ h1, h2, h3 {
     .nav {
         font-size: 18px ;
     }
+    .mobile-menu-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .image-section img {
         max-width: 360px;
     }
@@ -541,12 +584,17 @@ h1, h2, h3 {
         font-size: 2.4rem;
     }
     .new-items > .items-container {
+        gap: 80px;
         flex-direction: column;
     }
 
     .menu-container, .about-container {
         padding: 0 24px;
     }
+    .menu-type-container > .menu-type-name {
+        font-size: 54px;
+    }
+    
     .about-footer {
     padding: 0 24px;
     }
@@ -558,7 +606,7 @@ h1, h2, h3 {
         padding: 80px 24px;
     }
     .menu-list > li > img {
-        height: 320px;
+        height: 360px;
     }
     .footer {
     padding: 14px 24px;

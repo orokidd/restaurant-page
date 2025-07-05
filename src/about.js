@@ -133,7 +133,6 @@ function createFooterSection() {
     const footer = document.createElement('div')
     footer.className = "about-footer"
 
-    // footer top
     const footerTop = document.createElement('div')
     const location = document.createElement('div')
     const restorauntName = document.createElement('p')
@@ -147,19 +146,16 @@ function createFooterSection() {
     location.append(restorauntName, locationName)
 
     const openTime = document.createElement('div')
-    const openTimeLunch = document.createElement('div')
 
-    const openTimeLunchDate = document.createElement('div')
-    const openTimeLunchClock = document.createElement('div')
+    const openTimeDate = document.createElement('p')
+    const openTimeClock = document.createElement('p')
 
     openTime.className = "container-opentime"
-    openTimeLunch.className = "opentime"
-    openTimeLunchDate.textContent = 'Thursday - Sunday'
-    openTimeLunchClock.textContent = '16:00 - 22:00'
+    openTimeDate.textContent = 'Thursday - Sunday'
+    openTimeClock.textContent = '16:00 - 22:00'
 
-    openTimeLunch.append(openTimeLunchDate, openTimeLunchClock)
-    openTime.append(openTimeLunch)
-
+    openTime.append(openTimeDate, openTimeClock)
+    
     footerTop.append(location, openTime)
     footer.append(footerTop)
 

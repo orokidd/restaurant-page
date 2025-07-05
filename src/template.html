@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar El Yasmine</title>
 </head>
+
 <body>
+
+    <nav id="mobile-menu">
+        <div class="close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <ul>
+            <li><a href="#" class="nav" id="home">Home</a></li>
+            <li><a href="#" class="nav" id="menu">Menu</a></li>
+            <li><a href="#" class="nav" id="about">About</a></li>
+        </ul>
+    </nav>
+
     <header>
         <div class="logo">
             <img src="./images/restaurant-logo.png" alt="logo">
         </div>
+
         <nav class="navigations">
             <button class="nav" id="home">Home</button>
             <button class="nav" id="menu">Menu</button>
             <button class="nav" id="about">About</button>
         </nav>
+
+        <div class="mobile-menu-button">
+            <button id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
     </header>
     <div id="content">
     </div>
 </body>
+
 </html>

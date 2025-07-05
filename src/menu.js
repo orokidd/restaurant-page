@@ -59,8 +59,11 @@ function createMenuSection() {
         const menuTypeText = document.createElement("h1")
         const foodsContainer = document.createElement("div")
 
+        
         menuTypeContainer.className = "menu-type-container"
+        menuTypeText.className = "menu-type-name"
         foodsContainer.className = "foods-container"
+
         menuTypeText.textContent = menu.menuType;
         menuTypeContainer.append(menuTypeText, foodsContainer)
 
