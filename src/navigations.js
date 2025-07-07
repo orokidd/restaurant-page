@@ -55,10 +55,19 @@ function updateActiveNav(selectedPage) {
     selectedNav.classList.add("active")
 }
 
+function logoClickListener() {
+    const logo = document.querySelector(".logo #logo-image")
+
+    logo.addEventListener('click', ()=> {
+        loadHome();
+    })
+}
+
 function initNavigation() {
     navbarListener();
     menuButtonListener();
     closeMenuButtonListener();
+    logoClickListener();
 }
 
 export { initNavigation, closeMobileMenu, updateActiveNav }
