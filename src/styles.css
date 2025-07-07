@@ -125,15 +125,15 @@ header {
     }
 
 .hero {
-    background-image: url(./images/hero3.jpg);
+    background-image: url(./images/webp/hero3.webp);
 }
 
 .heading {
-    background-image: url(./images/2.jpg);
+    background-image: url(./images/webp/2.webp);
 }
 
 .about.heading {
-    background-image: url(./images/1.jpg);
+    background-image: url(./images/webp/1.webp);
 }
 
 

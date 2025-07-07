@@ -1,10 +1,10 @@
 import { closeMobileMenu, updateActiveNav } from './navigations';
-import imgCrew1 from './images/crew2.jpg';
-import imgCrew2 from './images/crew6.jpg';
-import imgCrew3 from './images/crew3.jpg';
-import imgCrew4 from './images/crew5.jpg';
-import imgBig1 from './images/crew7.jpg';
-import farm1 from './images/farm1.jpg';
+import imgCrew1 from './images/webp/crew2.webp';
+import imgCrew2 from './images/webp/crew6.webp';
+import imgCrew3 from './images/webp/crew3.webp';
+import imgCrew4 from './images/webp/crew5.webp';
+import imgBig1 from './images/webp/crew7.webp';
+import farm1 from './images/webp/farm1.webp';
 
 function createHeadingSection() {
     const headingContainer = document.createElement("div")

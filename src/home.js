@@ -1,13 +1,13 @@
 import { closeMobileMenu, updateActiveNav } from './navigations';
-import imgFood1 from './images/food1.jpg';
-import imgFood2 from './images/food2.jpg';
-import imgFood3 from './images/food3.jpg';
-import imgFood4 from './images/food4.jpg';
-import imgFood5 from './images/food5.jpg';
-import imgEnvironment from './images/environment.jpg'
-import foodPlate from './images/foodtransparent.png'
-import foodPlate2 from './images/foodtransparent2.jpg'
-import foodPlate3 from './images/foodtransparent3.jpg'
+import imgFood1 from './images/webp/food1.webp';
+import imgFood2 from './images/webp/food2.webp';
+import imgFood3 from './images/webp/food3.webp';
+import imgFood4 from './images/webp/food4.webp';
+import imgFood5 from './images/webp/food5.webp';
+import imgEnvironment from './images/webp/environment.webp'
+import foodPlate from './images/webp/foodtransparent.webp'
+import foodPlate2 from './images/webp/foodtransparent2.webp'
+import foodPlate3 from './images/webp/foodtransparent3.webp'
 
 function createHeroSection() {
     const hero = document.createElement("div")
