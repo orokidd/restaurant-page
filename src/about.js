@@ -1,4 +1,4 @@
-import { closeMobileMenu } from './mobile';
+import { closeMobileMenu, updateActiveNav } from './navigations';
 import imgCrew1 from './images/crew2.jpg';
 import imgCrew2 from './images/crew6.jpg';
 import imgCrew3 from './images/crew3.jpg';
@@ -163,16 +163,6 @@ function createFooterSection() {
     return footer
 }
 
-function changeActivePage() {
-    const allNav = document.querySelectorAll(".nav")
-    const selectedNav = document.querySelector("#about")
-
-    allNav.forEach(nav => {
-        nav.className = "nav"
-    })
-    selectedNav.classList.add("active")
-}
-
 function loadAbout() {
     const content = document.querySelector('#content');
     content.innerHTML= ""
@@ -183,7 +173,7 @@ function loadAbout() {
 
     content.append(headingSection, aboutSection, footerSection);
 
-    changeActivePage()
+    updateActiveNav("#about")
     closeMobileMenu();
 }
 

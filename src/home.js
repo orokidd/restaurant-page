@@ -1,4 +1,4 @@
-import { closeMobileMenu } from './mobile';
+import { closeMobileMenu, updateActiveNav } from './navigations';
 import myImage from './images/food1.png';
 import imgFood1 from './images/food1.jpg';
 import imgFood2 from './images/food2.jpg';
@@ -255,16 +255,6 @@ function createFooter() {
     return section
 }
 
-function changeActivePage() {
-    const allNav = document.querySelectorAll(".nav")
-    const selectedNav = document.querySelector("#home")
-
-    allNav.forEach(nav => {
-        nav.className = "nav"
-    })
-    selectedNav.classList.add("active")
-}
-
 function loadHome() {
     const content = document.querySelector('#content');
     content.innerHTML= ""
@@ -280,7 +270,7 @@ function loadHome() {
 
     content.append(heroSection, secondSection, thirdSection, environmentSection, newItemSection, customerReviewsSrction, fourthSection, footerSection);
 
-    changeActivePage()
+    updateActiveNav("#home")
     closeMobileMenu();
 }
 

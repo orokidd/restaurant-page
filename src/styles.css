@@ -448,6 +448,7 @@ h1, h2, h3 {
 .about-section.story h1, .about-section.commitment h1, .about-section.farm h1 {
     font-size: 48px;
     text-align: center;
+    padding-bottom: 24px;
 }
 .about-section.story p, .about-section.commitment p, .about-section.farm p {
     margin: 0 auto;
