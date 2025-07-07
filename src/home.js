@@ -1,5 +1,4 @@
 import { closeMobileMenu, updateActiveNav } from './navigations';
-import myImage from './images/food1.png';
 import imgFood1 from './images/food1.jpg';
 import imgFood2 from './images/food2.jpg';
 import imgFood3 from './images/food3.jpg';
