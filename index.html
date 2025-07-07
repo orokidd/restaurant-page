@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dar El Yasmine</title>
 <script defer src="main.js"></script></head>
+
 <body>
     <header>
         <div class="logo">
-            <p>Dar El Yasmine</p>
+            <img src="86d5e81d9f3af3328d8d.png" id="logo-image" alt="logo">
         </div>
+
         <nav class="navigations">
             <button class="nav" id="home">Home</button>
             <button class="nav" id="menu">Menu</button>
             <button class="nav" id="about">About</button>
         </nav>
+
+        <div class="mobile-menu-button">
+            <button id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
     </header>
+
+    <nav id="mobile-menu">
+        <div class="close-button">
+            <svg id="clost-button-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <ul>
+            <li><a href="#" class="nav" id="mobile-home-button">Home</a></li>
+            <li><a href="#" class="nav" id="mobile-menu-button">Menu</a></li>
+            <li><a href="#" class="nav" id="mobile-about-button">About</a></li>
+        </ul>
+    </nav>
+
+
     <div id="content">
     </div>
 </body>
+
 </html>
